@@ -1,0 +1,152 @@
+@import "../../../style/media-queries";
+
+.main {
+  grid-area: main;
+  font-family: var(--font-mulish);
+  padding: 3rem 5%;
+  .block {
+    padding-bottom: 3rem;
+  }
+  h2 {
+    margin-bottom: 0.5rem;
+    @include md {
+      font-size: 88%;
+    }
+  }
+  .titleSmall {
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+  }
+  h3 {
+    margin: 0;
+    @include md {
+      font-size: 88%;
+    }
+  }
+  p {
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    margin-top: 0;
+    text-align: justify;
+    @include xs {
+      text-align: left;
+    }
+    @include sm {
+      text-align: left;
+    }
+    @include md {
+      font-size: 88%;
+    }
+  }
+  ul {
+    @include md {
+      font-size: 88%;
+    }
+  }
+  .experience {
+    display: grid;
+    grid: "timeline h3" auto "timeline text-hint" auto "timeline p" auto "timeline ul" auto / 120px auto;
+    margin-top: 4rem;
+    @include xs {
+      grid: "timeline h3" auto "timeline text-hint" auto "p p" auto "ul ul" auto / 120px auto;
+      margin: 4rem 0;
+    }
+    @include sm {
+      grid: "timeline h3" auto "timeline text-hint" auto "p p" auto "ul ul" auto / 120px auto;
+      margin: 4rem 0;
+    }
+
+    .timeline {
+      grid-area: timeline;
+      min-width: 120px;
+      margin-top: 0.5rem;
+      text-align: center;
+      color: var(--hint);
+      padding-right: 2rem;
+      border-right: 1px solid var(--border);
+      @include xs {
+        font-size: 85%;
+        padding-right: 0.7rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+    .textHint {
+      grid-area: text-hint;
+      padding: 0 0 1.5rem 2rem;
+      display: flex;
+      flex-direction: row nowrap;
+      &:hover {
+        .imag {
+          transition: scale 0.25s, opacity 0.25s;
+          scale: 125%;
+          opacity: 0.75;
+        }
+      }
+
+      @include xs {
+        padding: 0.4rem 0 0 0.7rem;
+        font-size: 90%;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    .imag {
+      transition: scale 0.25s, opacity 0.25s;
+      height: 2.4rem;
+      padding-right: 0.5rem;
+    }
+    .titre {
+      grid-area: h3;
+      padding-left: 1.5rem;
+      @include xs {
+        padding: 0 0 0.4rem 0.7rem;
+        font-size: 98%;
+      }
+    }
+    .texte {
+      grid-area: p;
+      padding-left: 1.5rem;
+      @include xs {
+        font-size: 95%;
+        padding: 1.5rem 0;
+      }
+    }
+    ul {
+      grid-area: ul;
+      list-style: disc;
+      padding-left: 5rem;
+      @include xs {
+        font-size: 95%;
+      }
+    }
+    .resultat {
+      padding: 1rem 1.5rem;
+      @include xs {
+        padding-bottom: 0rem;
+      }
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+  .separator {
+    display: none;
+    @include xs {
+      display: flex;
+      margin: 1rem auto;
+      height: 0.1rem;
+      width: 10rem;
+      background: var(--border);
+      border-radius: 50%;
+    }
+    @include sm {
+      display: flex;
+      margin: 1rem auto;
+      height: 0.1rem;
+      width: 20rem;
+      background: var(--border);
+      border-radius: 50%;
+    }
+  }
+}

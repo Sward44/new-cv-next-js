@@ -1,0 +1,16 @@
+@import "../../../../style/media-queries";
+
+.locaAddress {
+  display: flex;
+  margin: 0.3rem 0 2rem 0;
+  font-style: italic;
+  &:hover {
+    .titleHover {
+      opacity: 0.75;
+      transition: all 0.25s;
+    }
+  }
+  @include md {
+    font-size: 88%;
+  }
+}

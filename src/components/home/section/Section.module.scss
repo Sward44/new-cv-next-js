@@ -1,0 +1,29 @@
+@import "../../../style/media-queries.scss";
+
+.picture {
+  position: relative;
+  min-height: 180px;
+  grid-area: picture;
+  background: linear-gradient(to left, var(--light), var(--background));
+  box-shadow: 0px 3px 0px 0px rgba(23, 29, 37, 0.1);
+  justify-content: center;
+  @include xs {
+    background: linear-gradient(to left, var(--primary), var(--light));
+    box-shadow: none;
+  }
+  @include sm {
+    background: linear-gradient(to left, var(--primary), var(--light));
+    box-shadow: none;
+  }
+  img {
+    padding: 1.5rem;
+    @include xs {
+      padding: 1rem 0 0 0;
+      // max-width: 50%;
+    }
+    @include sm {
+      padding: 1rem 0 0 0;
+      // max-height: 280px;
+    }
+  }
+}

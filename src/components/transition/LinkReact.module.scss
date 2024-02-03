@@ -1,0 +1,50 @@
+.localisation {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .entourage {
+    position: relative;
+    .cadre {
+      box-shadow: 1.5px 0px 10px 0px rgba(23, 29, 37, 0.18);
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 1;
+      position: absolute;
+      left: 165px;
+      top: -30px;
+      width: 192px;
+      height: 108px;
+      padding: 0;
+      margin: 0;
+      .image {
+        position: relative;
+      }
+    }
+  }
+}
+
+.enter {
+  opacity: 0;
+  transform: translateX(40px);
+}
+.enterActive {
+  transition: opacity 0.4s, transform 0.4s;
+}
+.enterActive,
+.enterDone {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.exitActive {
+  transition: opacity 0.4s, transform 0.4s;
+}
+.exitActive,
+.exitDone {
+  opacity: 0;
+  transform: translateX(40px);
+}

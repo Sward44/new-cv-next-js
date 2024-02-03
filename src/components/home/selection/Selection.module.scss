@@ -1,0 +1,126 @@
+@import "../../../style/media-queries";
+
+.selection {
+  grid-area: selection;
+  font-family: var(--font-mulish);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  padding: 5rem;
+  background: var(--text);
+  @include xs {
+    padding: 1rem 1rem 5rem;
+  }
+  h2 {
+    margin-bottom: 3rem;
+    @include xs {
+      margin-bottom: 2rem;
+    }
+  }
+  .titleSmall {
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+  }
+  .selector {
+    display: flex;
+    z-index: 10;
+    flex: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: var(--text);
+    outline: 0;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    min-width: 20rem;
+    padding: 1rem 2rem;
+    line-height: 2rem;
+    @include xs {
+      min-width: 16rem;
+    }
+    @include sm {
+      min-width: 18rem;
+    }
+    .text {
+      display: flex;
+      z-index: 20;
+    }
+    .icon {
+      display: flex;
+      z-index: 20;
+    }
+  }
+  .enabled {
+    .selector {
+      z-index: 10;
+      border-radius: 0.5rem 0.5rem 0 0;
+      .icon {
+        display: flex;
+        z-index: 20;
+      }
+    }
+
+    .selectButton {
+      display: flex;
+      flex: row nowrap;
+      transform: translateY(0px);
+      position: absolute;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: white;
+      outline: 0;
+      border: 0;
+      border-radius: 0 0 0.5rem 0.5rem;
+      font-size: 1.6rem;
+      min-width: 20rem;
+      padding: 1rem 2rem;
+      line-height: 2rem;
+      transition: all 0.3s;
+      .text {
+        display: flex;
+        img {
+          transition: all 0.2s 0.1s;
+          opacity: 1;
+        }
+        p {
+          transition: all 0.2s 0.1s;
+          opacity: 1;
+        }
+      }
+      @include xs {
+        min-width: 16rem;
+      }
+      @include sm {
+        min-width: 18rem;
+      }
+    }
+  }
+  .selectButton {
+    transform: translateY(-50px);
+    position: absolute;
+    padding: 1rem 2rem;
+    min-width: 20rem;
+    transition: all 0.3s;
+    .text {
+      display: flex;
+      img {
+        transition: all 0.2s;
+        opacity: 0;
+      }
+      p {
+        transition: all 0.2s;
+        opacity: 0;
+      }
+    }
+    @include xs {
+      min-width: 16rem;
+    }
+    @include sm {
+      min-width: 18rem;
+    }
+  }
+}

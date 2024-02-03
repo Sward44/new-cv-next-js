@@ -1,0 +1,56 @@
+@import "../../../style/media-queries";
+
+.header {
+  grid-area: header;
+  font-family: var(--font-mulish);
+  background: linear-gradient(to left, var(--primary), var(--light));
+  box-shadow: 0 3px 7px 0px rgba(23, 29, 37, 0.24);
+  padding: 1rem 1rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include xs {
+    padding: 0.5rem 1rem;
+    align-content: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -44px;
+    z-index: 2;
+  }
+  @include sm {
+    padding: 0.5rem 1rem;
+    align-content: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -61px;
+    z-index: 2;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 8rem;
+    font-weight: 300;
+    letter-spacing: 2rem;
+    @include xs {
+      font-size: 3rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.2rem;
+    }
+    @include sm {
+      font-size: 4rem;
+      line-height: 4.3rem;
+      letter-spacing: 1.5rem;
+    }
+    @include md {
+      font-size: 5rem;
+      line-height: 5rem;
+      letter-spacing: 1.2rem;
+    }
+  }
+  p {
+    letter-spacing: 0.15rem;
+    font-size: 95%;
+  }
+}

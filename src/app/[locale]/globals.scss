@@ -1,0 +1,90 @@
+@import "../../style/media-queries.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #c6e6f1;
+  --primary: #2071e7;
+  --dark: #2980b9;
+  --text: #333;
+  --background: #fafafa;
+  --hint: #999;
+  --border: #ddd;
+  --shining: #fff600;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text);
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.25s;
+  &:hover {
+    p {
+      opacity: 0.75;
+      transition: all 0.25s;
+    }
+    svg {
+      font-size: 16px;
+      transition: all 0.25s;
+      scale: 115%;
+      color: var(--text);
+    }
+  }
+}
+
+.title {
+  &-small {
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  min-height: 100vh;
+  grid: "picture header" auto "aside main" 1fr "selection footer" auto / 305px auto;
+  @include xs {
+    grid: "picture" auto "header" auto "main" auto "aside" auto "footer" auto "selection" auto/ auto;
+  }
+  @include sm {
+    grid: "picture" auto "header" auto "main" auto "aside" auto "footer" auto "selection" auto/ auto;
+  }
+  @include md {
+    grid: "picture header" auto "aside main" 1fr "selection footer" auto / 270px auto;
+  }
+}

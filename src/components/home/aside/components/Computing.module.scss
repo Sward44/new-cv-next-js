@@ -1,0 +1,60 @@
+.localisation {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.barSkill {
+  position: relative;
+  margin: 0.5rem 0 2rem 0;
+  height: 16px;
+  border-radius: 3px;
+  background: var(--hint);
+  .skillProgress {
+    position: absolute;
+    height: 16px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    top: 0;
+    left: 0;
+    background: var(--primary);
+  }
+  .skillDot {
+    position: absolute;
+    height: 20px;
+    border-radius: 50%;
+    width: 2px;
+    background: var(--text);
+    left: calc(85% - 1px);
+    top: -2px;
+  }
+  .html {
+    width: 93%;
+  }
+  .htmlDot {
+    left: calc(93% - 1px);
+  }
+  .js {
+    width: 75%;
+  }
+  .jsDot {
+    left: calc(75% - 1px);
+  }
+  .windows {
+    width: 80%;
+  }
+  .windowsDot {
+    left: calc(80% - 1px);
+  }
+  .erp {
+    width: 82%;
+  }
+  .erpDot {
+    left: calc(82% - 1px);
+  }
+  .cao {
+    width: 65%;
+  }
+  .caoDot {
+    left: calc(65% - 1px);
+  }
+}
