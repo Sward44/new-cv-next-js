@@ -8,7 +8,7 @@ dotenv.config({ path: ".env.production.local" });
 
 if (!process.env.REFRESH_TOKEN) {
   const code =
-    "4/0AeaYSHDQMk5F8yNkrug1aThvur5UnrEhIYlD9huBfMIHG5V2gfDUmTXIfR2pyH3SWQvvrQ";
+    "4/0AeaYSHCfHI8rWYpK4E3S7cG3oYVb43TH2m5N1j0_Bz54wZMJizdsX31GY_E2CpdSYkkOMQ";
 
   exchangeCodeForTokens(code)
     .then((tokens) => {

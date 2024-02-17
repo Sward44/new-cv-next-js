@@ -9,7 +9,7 @@ export async function exchangeCodeForTokens(code) {
     const response = await axios.post("https://oauth2.googleapis.com/token", {
       client_id: process.env.CLIENT_ID,
       client_secret: process.env.CLIENT_SECRET,
-      redirect_uri: "https://gooka.net",
+      redirect_uri: "https://david-launay.com",
       grant_type: "authorization_code",
       code,
     });
@@ -21,7 +21,6 @@ export async function exchangeCodeForTokens(code) {
   }
 }
 
-// Fonction pour écrire les tokens dans le fichier .env
 export function writeTokensToFile(tokens) {
   const envData = `
 EMAIL_USERNAME=${process.env.EMAI_USERNAME}
@@ -32,5 +31,5 @@ REFRESH_TOKEN=${tokens.refresh_token}
 ACCESS_TOKEN=${tokens.access_token}
 `;
 
-  fs.writeFileSync(".env", envData);
+  fs.writeFileSync(".env.production.local", envData);
 }
