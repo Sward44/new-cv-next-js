@@ -1,17 +1,37 @@
 import nodemailer from "nodemailer";
 import pug from "pug";
 import fs from "fs";
+import dotenv from "dotenv";
+import { exchangeCodeForTokens, writeTokensToFile } from "./connexion.js";
 
+dotenv.config({ path: ".env.production.local" });
+
+if (!process.env.REFRESH_TOKEN) {
+  const code =
+    "4/0AeaYSHDQMk5F8yNkrug1aThvur5UnrEhIYlD9huBfMIHG5V2gfDUmTXIfR2pyH3SWQvvrQ";
+
+  exchangeCodeForTokens(code)
+    .then((tokens) => {
+      writeTokensToFile(tokens);
+      console.log("Tokens saved successfully - ", tokens);
+    })
+    .catch((error) => {
+      console.error("Failed to save tokens:", error);
+    });
+}
 class Email {
   constructor() {
     this.prodTransporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
-      secure: true,
+      secure: false,
       auth: {
         type: "OAuth2",
+        user: process.env.EMAIL_USERNAME,
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN,
+        accessToken: process.env.ACCESS_TOKEN,
       },
     });
     this.devTransporter = nodemailer.createTransport({
