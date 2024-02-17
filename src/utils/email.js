@@ -62,7 +62,7 @@ class Email {
           html: template,
         });
       }
-      console.log("EMAIL OK ! : ", data);
+      console.log("EMAIL OK ! : ", JSON.stringify(data));
     } catch (e) {
       throw new Error(e);
     }
