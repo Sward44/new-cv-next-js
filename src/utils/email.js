@@ -51,7 +51,7 @@ class Email {
       port: 2525,
       auth: {
         user: process.env.EMAIL_USERNAME,
-        pass: process.env.EMAIL_PASSWORD,
+        pass: process.env.STMP_PASSWORD,
       },
     });
   }
@@ -81,7 +81,7 @@ class Email {
       let data;
       if (prod) {
         data = await this.prodTransporter.sendMail({
-          from: "David Launay <no-reply@david-launay.com>",
+          from: "David Launay <davidlaunay567@gmail.com>",
           to: options.to,
           subject: options.subject,
           html: template,
