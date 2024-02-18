@@ -6,8 +6,6 @@ import email from "@/utils/email";
 
 export const PUT = async (req) => {
   const body = await req.json();
-  console.log(body);
-
   try {
     await connect();
     const existingUser = await User.findOne({ _id: body._id }).exec();
@@ -43,20 +41,17 @@ export const PUT = async (req) => {
     });
 
     await newPost.save();
-    email.getTemplate("welcome-email-ghost", {
-      to: "davidlaunay567@gmail.com",
-      subject: "Compte rendu from david-launay.com",
-      metaData: {
-        bienvenue: "Bienvenue sur david-launay.com",
-        siteUrl: "https://david-launay.com",
-        email: "davidlaunay567@gmail.com",
-        ownerEmail: existingUser.email,
-        ownerSurname: existingUser.surname,
-        ownerName: existingUser.name,
-        ownerPhone: existingUser.phone,
-        ownerSite: existingUser.site,
-        ownerComments: newPost.body,
-      },
+
+    await email.getTemplate("welcome-email-ghost", {
+      bienvenue: "Bienvenue sur david-launay.com",
+      siteUrl: "https://david-launay.com",
+      email: "davidlaunay567@gmail.com",
+      ownerEmail: existingUser.email,
+      ownerSurname: existingUser.surname,
+      ownerName: existingUser.name,
+      ownerPhone: existingUser.phone,
+      ownerSite: existingUser.site,
+      ownerComments: newPost.body,
     });
 
     return NextResponse.json(existingUser.toObject(), {

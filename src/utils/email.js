@@ -1,71 +1,39 @@
+"server only";
 import nodemailer from "nodemailer";
 import pug from "pug";
 import fs from "fs";
-// import dotenv from "dotenv";
-// import { exchangeCodeForTokens, writeTokensToFile } from "./connexion.js";
-
-// dotenv.config({ path: ".env.production.local" });
-
-// if (!process.env.REFRESH_TOKEN && process.env.NODE_ENV === "production") {
-//   const code =
-//     "4/0AeaYSHCfHI8rWYpK4E3S7cG3oYVb43TH2m5N1j0_Bz54wZMJizdsX31GY_E2CpdSYkkOMQ";
-
-//   exchangeCodeForTokens(code)
-//     .then((tokens) => {
-//       writeTokensToFile(tokens);
-//       console.log("Tokens saved successfully - ", tokens);
-//     })
-//     .catch((error) => {
-//       console.error("Failed to save tokens:", error);
-//     });
-// }
-
 class Email {
   constructor() {
-    this.prodTransporter = nodemailer.createTransport({
+    this.transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USERNAME,
-        pass: process.env.STMP_PASSWORD,
+        user: "davidlaunay567@gmail.com",
+        pass: "fjed dwuh xgqb vdtz",
       },
-      // host: "smtp.gmail.com",
-      // port: 587,
-      // secure: false,
-      // auth: {
-      //   type: "OAuth2",
-      //   user: process.env.EMAIL_USERNAME,
-      //   clientId: process.env.CLIENT_ID,
-      //   clientSecret: process.env.CLIENT_SECRET,
-      //   refreshToken: process.env.REFRESH_TOKEN,
-      //   accessToken: process.env.ACCESS_TOKEN,
-      // },
     });
+
     try {
-      const result = this.prodTransporter.verify();
-      console.log("Email transporter is ready : ", result);
+      const result = transporter.verify();
+      console.log("Email transporter est prêt : ", result);
     } catch (e) {
-      console.log(e);
+      console.log("Le resultat de connexion n'est pas bon : ", e);
     }
-    this.devTransporter = nodemailer.createTransport({
-      host: "sandbox.smtp.mailtrap.io",
-      port: 2525,
-      auth: {
-        user: process.env.EMAIL_USERNAME,
-        pass: process.env.EMAIL_PASSWORD,
-      },
-    });
   }
-  async getTemplate(templateName, options, prod = false) {
+
+  async getTemplate(templateName, options) {
     try {
       const template = pug.renderFile(
         `src/utils/email-template/${templateName}.pug`,
-        options.metaData
+        options
       );
-      const fileName = `${new Date().getFullYear()}${
-        new Date().getMonth() + 1
-      }${new Date().getDate()}${new Date().getHours()}${new Date().getMinutes()}${new Date().getSeconds()}-message-${
-        options.metaData.ownerName
-      }.html`;
+      const year = new Date().getFullYear();
+      const month = (new Date().getMonth() + 1).toString().padStart(2, "0");
+      const day = new Date().getDate().toString().padStart(2, "0");
+      const hour = new Date().getHours().toString().padStart(2, "0");
+      const minute = new Date().getMinutes().toString().padStart(2, "0");
+      const second = new Date().getSeconds().toString().padStart(2, "0");
+      const fileName = `${year}${month}${day}${hour}${minute}${second}-message-${options.ownerSurname}-${options.ownerName}.html`;
+
       fs.writeFile(
         `src/utils/email-template/html/${fileName}`,
         template,
@@ -78,23 +46,13 @@ class Email {
         }
       );
 
-      let data;
-      if (prod) {
-        data = await this.prodTransporter.sendMail({
-          from: "David Launay <davidlaunay567@gmail.com>",
-          to: options.to,
-          subject: options.subject,
-          html: template,
-        });
-      } else {
-        data = await this.devTransporter.sendMail({
-          from: "David Launay <no-reply@david-launay.com>",
-          to: options.to,
-          subject: options.subject,
-          html: template,
-        });
-      }
-      console.log("EMAIL OK ! : ", JSON.stringify(data));
+      const data = await this.transporter.sendMail({
+        from: "David Launay <no-reply@david-launay.com>",
+        to: "davidlaunay567@gmail.com",
+        subject: "[david-launay.com] Nouveau message",
+        html: template,
+      });
+      console.log("EMAIL OK ! : ", data);
     } catch (e) {
       throw new Error(e);
     }
