@@ -1,39 +1,51 @@
 import nodemailer from "nodemailer";
 import pug from "pug";
 import fs from "fs";
-import dotenv from "dotenv";
-import { exchangeCodeForTokens, writeTokensToFile } from "./connexion.js";
+// import dotenv from "dotenv";
+// import { exchangeCodeForTokens, writeTokensToFile } from "./connexion.js";
 
-dotenv.config({ path: ".env.production.local" });
+// dotenv.config({ path: ".env.production.local" });
 
-if (!process.env.REFRESH_TOKEN) {
-  const code =
-    "4/0AeaYSHCfHI8rWYpK4E3S7cG3oYVb43TH2m5N1j0_Bz54wZMJizdsX31GY_E2CpdSYkkOMQ";
+// if (!process.env.REFRESH_TOKEN && process.env.NODE_ENV === "production") {
+//   const code =
+//     "4/0AeaYSHCfHI8rWYpK4E3S7cG3oYVb43TH2m5N1j0_Bz54wZMJizdsX31GY_E2CpdSYkkOMQ";
 
-  exchangeCodeForTokens(code)
-    .then((tokens) => {
-      writeTokensToFile(tokens);
-      console.log("Tokens saved successfully - ", tokens);
-    })
-    .catch((error) => {
-      console.error("Failed to save tokens:", error);
-    });
-}
+//   exchangeCodeForTokens(code)
+//     .then((tokens) => {
+//       writeTokensToFile(tokens);
+//       console.log("Tokens saved successfully - ", tokens);
+//     })
+//     .catch((error) => {
+//       console.error("Failed to save tokens:", error);
+//     });
+// }
+
 class Email {
   constructor() {
     this.prodTransporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
+      service: "gmail",
       auth: {
-        type: "OAuth2",
         user: process.env.EMAIL_USERNAME,
-        clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
-        refreshToken: process.env.REFRESH_TOKEN,
-        accessToken: process.env.ACCESS_TOKEN,
+        pass: process.env.EMAIL_PASSWORD,
       },
+      // host: "smtp.gmail.com",
+      // port: 587,
+      // secure: false,
+      // auth: {
+      //   type: "OAuth2",
+      //   user: process.env.EMAIL_USERNAME,
+      //   clientId: process.env.CLIENT_ID,
+      //   clientSecret: process.env.CLIENT_SECRET,
+      //   refreshToken: process.env.REFRESH_TOKEN,
+      //   accessToken: process.env.ACCESS_TOKEN,
+      // },
     });
+    try {
+      const result = this.prodTransporter.verify();
+      console.log("Email transporter is ready : ", result);
+    } catch (e) {
+      console.log(e);
+    }
     this.devTransporter = nodemailer.createTransport({
       host: "sandbox.smtp.mailtrap.io",
       port: 2525,
@@ -69,7 +81,7 @@ class Email {
       let data;
       if (prod) {
         data = await this.prodTransporter.sendMail({
-          from: "David Launay <davidlaunay567@gmail.com>",
+          from: "David Launay <no-reply@david-launay.com>",
           to: options.to,
           subject: options.subject,
           html: template,

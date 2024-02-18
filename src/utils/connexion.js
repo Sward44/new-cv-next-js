@@ -1,8 +1,5 @@
 import axios from "axios";
-import dotenv from "dotenv";
 import fs from "fs";
-
-dotenv.config({ path: ".env.production.local" });
 
 export async function exchangeCodeForTokens(code) {
   try {
