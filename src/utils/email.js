@@ -26,7 +26,7 @@ class Email {
       service: "gmail",
       auth: {
         user: process.env.EMAIL_USERNAME,
-        pass: process.env.EMAIL_PASSWORD,
+        pass: process.env.STMP_PASSWORD,
       },
       // host: "smtp.gmail.com",
       // port: 587,
@@ -51,7 +51,7 @@ class Email {
       port: 2525,
       auth: {
         user: process.env.EMAIL_USERNAME,
-        pass: process.env.STMP_PASSWORD,
+        pass: process.env.EMAIL_PASSWORD,
       },
     });
   }
