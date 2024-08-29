@@ -31,7 +31,6 @@ function TelechargerPDF() {
       <Link href="fr/20240828_CV_David-Launay_fr.pdf">
         <FontAwesomeIcon
           icon={faFilePdf}
-          color="white"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           style={{
@@ -40,7 +39,7 @@ function TelechargerPDF() {
             paddingLeft: "10px",
             fontSize: "20px",
             color: isHoveredPDF ? "white" : "white",
-            transform: isHoveredPDF ? "scale(1.15)" : "scale(1)",
+            transform: isHoveredPDF ? "scale(1.05)" : "scale(1)",
             transition: "all 0.3s",
           }}
         />
@@ -51,7 +50,6 @@ function TelechargerPDF() {
       >
         <FontAwesomeIcon
           icon={faDownload}
-          color="white"
           onMouseEnter={handleMouseEnterDownload}
           onMouseLeave={handleMouseLeaveDownload}
           style={{
@@ -59,7 +57,7 @@ function TelechargerPDF() {
             paddingLeft: "10px",
             fontSize: "20px",
             color: isHoveredDownload ? "white" : "white",
-            transform: isHoveredDownload ? "scale(1.15)" : "scale(1)",
+            transform: isHoveredDownload ? "scale(1.05)" : "scale(1)",
             transition: "all 0.3s",
           }}
         />
@@ -70,22 +68,24 @@ function TelechargerPDF() {
         title="print"
         style={{ display: "none" }}
         src="fr/20240828_CV_David-Launay_fr.pdf"
-      ></iframe>
-      <FontAwesomeIcon
-        icon={faPrint}
-        color="white"
-        onMouseEnter={handleMouseEnterPrint}
-        onMouseLeave={handleMouseLeavePrint}
+      />
+      <span
         style={{
           paddingLeft: "10px",
           paddingRight: "10px",
           fontSize: "20px",
           color: isHoveredPrint ? "white" : "white",
-          transform: isHoveredPrint ? "scale(1.15)" : "scale(1)",
+          transform: isHoveredPrint ? "scale(1.1)" : "scale(1)",
           transition: "all 0.3s",
         }}
-        onClick={handlePrint}
-      />
+      >
+        <FontAwesomeIcon
+          icon={faPrint}
+          onMouseEnter={handleMouseEnterPrint}
+          onMouseLeave={handleMouseLeavePrint}
+          onClick={handlePrint}
+        />
+      </span>
     </>
   );
 }

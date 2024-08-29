@@ -5,10 +5,10 @@ export default async function Header({ title }) {
   return (
     <header className={styles.header}>
       <h1>David Launay</h1>
-      <p>
-        {title}
+      <span>
+        <p>{title}</p>
         <TelechargerPDF />
-      </p>
+      </span>
     </header>
   );
 }
