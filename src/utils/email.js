@@ -5,11 +5,17 @@ import pug from "pug";
 class Email {
   constructor() {
     this.transporter = nodemailer.createTransport({
-      host: "sandbox.smtp.mailtrap.io",
-      port: 2525,
+      service: "gmail",
       auth: {
-        user: "f6473c6bce4408",
-        pass: "f8cf1756e55fb5",
+        user: process.env.EMAIL_USERNAME,
+        pass: process.env.EMAIL_PASSWORD,
+        // host: "sandbox.smtp.mailtrap.io",
+        // port: 2525,
+        //   auth: {
+        //     user: "f6473c6bce4408",
+        //     pass: "f8cf1756e55fb5",
+        //   },
+        // });
       },
     });
 
@@ -19,20 +25,6 @@ class Email {
     } catch (e) {
       console.log("Le resultat de connexion n'est pas bon : ", e);
     }
-
-    //   service: "gmail",
-    //   auth: {
-    //     user: "davidlaunay567@gmail.com",
-    //     pass: "fjed dwuh xgqb vdtz",
-    //   },
-    // });
-
-    // try {
-    //   const result = transporter.verify();
-    //   console.log("Email transporter est prêt : ", result);
-    // } catch (e) {
-    //   console.log("Le resultat de connexion n'est pas bon : ", e);
-    // }
   }
 
   async getTemplate(templateName, options) {
