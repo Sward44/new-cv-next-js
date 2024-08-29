@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import ImageNext from "./ImageNext";
 import styles from "./LinkReact.module.scss";
+import Link from "next/link";
 
 export default function LinkReact({ children, item, index }) {
   const [show, setShow] = useState(false);
@@ -23,19 +24,19 @@ export default function LinkReact({ children, item, index }) {
   }
 
   return (
-    <div
+    <span
       key={index}
       onMouseEnter={handleMouseOver}
       onMouseLeave={handleMouseLeave}
     >
-      <a
+      <Link
         href={item.url}
         target="_blank "
         rel="noopener noreferrer"
         className={styles.localisation}
       >
         {children}
-        <div key={index} className={styles.entourage}>
+        <span key={index} className={styles.entourage}>
           <h3>{item.title}</h3>
 
           <CSSTransition
@@ -52,14 +53,14 @@ export default function LinkReact({ children, item, index }) {
               exitDone: styles["exitDone"],
             }}
           >
-            <div ref={ref} className={styles.cadre}>
-              <div className={styles.image}>
+            <span ref={ref} className={styles.cadre}>
+              <span className={styles.image}>
                 <ImageNext item={item} index={index} />
-              </div>
-            </div>
+              </span>
+            </span>
           </CSSTransition>
-        </div>
-      </a>
-    </div>
+        </span>
+      </Link>
+    </span>
   );
 }

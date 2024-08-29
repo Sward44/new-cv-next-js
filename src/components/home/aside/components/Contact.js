@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Contact.module.scss";
+import Link from "next/link";
 
 const Contact = ({ contact }) => {
   return (
@@ -7,8 +8,8 @@ const Contact = ({ contact }) => {
       {contact.map((item) => (
         <>
           <h3 key={crypto.randomUUID()}>{item.title}</h3>
-          <div className={styles.locaAddress} title={item.title_hover}>
-            <a
+          <span className={styles.locaAddress} title={item.title_hover}>
+            <Link
               href={item.url}
               rel="noopener noreferrer"
               target="_blank"
@@ -28,8 +29,8 @@ const Contact = ({ contact }) => {
                 style={{ marginRight: "10px" }}
               />
               {item.description}
-            </a>
-          </div>
+            </Link>
+          </span>
         </>
       ))}
     </>

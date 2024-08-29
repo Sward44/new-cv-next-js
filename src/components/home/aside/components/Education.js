@@ -4,9 +4,9 @@ import LinkReact from "@/components/transition/LinkReact";
 const Education = ({ education }) => {
   return (
     <>
-      {education.map((item) => (
+      {education.map((item, index) => (
         <>
-          <LinkReact item={item} index={crypto.randomUUID()}>
+          <LinkReact item={item} index={index}>
             <Image
               key={crypto.randomUUID()}
               src={require(`../../../${item.icon}`).default}
@@ -16,18 +16,22 @@ const Education = ({ education }) => {
               style={{ marginRight: "10px" }}
             />
           </LinkReact>
-          <div style={{ margin: "0.5rem 0 2rem" }}>
-            {item.description.map((desc) => (
+          <span style={{ margin: "0.5rem 0 2rem" }}>
+            {item.description.map((desc, i) => (
               <>
                 <p
-                  key={crypto.randomUUID()}
-                  style={{ margin: "0", "font-style": "italic" }}
+                  key={i}
+                  style={{
+                    margin: "0",
+                    fontStyle: "italic",
+                    paddingBottom: "1rem",
+                  }}
                 >
                   {desc}
                 </p>
               </>
             ))}
-          </div>
+          </span>
         </>
       ))}
     </>

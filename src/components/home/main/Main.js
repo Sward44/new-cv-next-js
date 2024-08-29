@@ -43,8 +43,8 @@ export default function Main({ main }) {
             </p>
           </div>
           <ul>
-            {item.result.map((item) => (
-              <li key={crypto.randomUUID()}>{item}</li>
+            {item.result.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
