@@ -7,7 +7,7 @@ const Computing = ({ computing }) => {
       {computing.map((item) => (
         <>
           <div key={crypto.randomUUID()} className={styles.localisation}>
-            {item.icons.map((icon) => (
+            {/* {item.icons.map((icon) => (
               <a
                 key={crypto.randomUUID()}
                 href={icon.url}
@@ -22,7 +22,7 @@ const Computing = ({ computing }) => {
                   style={{ marginRight: "10px" }}
                 />
               </a>
-            ))}
+            ))} */}
             <h3>{item.title}</h3>
           </div>
           <div key={crypto.randomUUID()} className={styles.barSkill}>

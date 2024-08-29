@@ -10,13 +10,13 @@ import Footer from "@/components/home/footer/Footer";
 export default async function Home({ params: { locale } }) {
   const dict = await getDictionary(locale);
   return (
-    <>
+    <div className="gridContainer">
       <Header title={dict.header.title} />
       <Section />
       <Main main={dict.main} />
       <Aside aside={dict.aside} />
       <Selection selection={dict.selection} />
       <Footer footer={dict.footer} formulaire={dict.formulaire} />
-    </>
+    </div>
   );
 }

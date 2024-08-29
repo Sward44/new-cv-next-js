@@ -2,12 +2,12 @@
   "document":
     {
       "title": "David Launay - Businessman",
-      "description": "With over 20 years' experience in the innovative industry, I have successfully pivoted towards data analysis and the exploitation of new technologies on the Internet. My career path demonstrates an impressive adaptability, combining technical expertise and strategic vision, I thrive in the digital world.",
+      "description": "With 20 years' experience, I have moved into data analysis and search engine optimisation. My technical expertise and strategic vision enhance my ability to optimise online visibility, demonstrating my adaptability and passion for digital.",
       "manifest": "/manifest.json"
     },
   "header":
     {
-      "title": "Data analyst - Full-Stack integrator"
+      "title": "Full-stack & Designer"
     },
   "aside":
     {
@@ -23,6 +23,7 @@
           "title": "Phone :",
           "title_hover": "Click here to call",
           "icon": {"prefix" : "fas", "iconName": "faPhone"},
+          "icon_alt": "Phone to david launay",
           "description": "+33 (0)6 36 94 69 70",
           "url": "telto:+33636946970"
         },
@@ -30,6 +31,7 @@
           "title": "Email :",
           "title_hover": "Click here to send an email",
           "icon": {"prefix" : "fas", "iconName": "faEnvelope"},
+          "icon_alt": "Send email to david launay",
           "description": "davidlaunay567@gmail.com",
           "url": "mailto:savidlaunay567@gmail.com"
         },
@@ -37,6 +39,7 @@
           "title": "Adress :",
           "title_hover": "Click here to discover the sector",
           "icon": {"prefix" : "fas", "iconName": "faLocationDot"},
+          "icon_alt": "Address of david launay",
           "description": "Le Pellerin, France",
           "url": "https://goo.gl/maps/67yWc4vdLkcJh1op7"
         },
@@ -44,15 +47,24 @@
           "title": "Social:",
           "title_hover": "Click here to go to LinkedIn",
           "icon": {"prefix" : "fab", "iconName": "faLinkedin"},
-          "description": "linkedin/david-launay",
-          "url": "https://www.linkedin.com/in/david-launay-178576b1/?locale=fr_FR"
+          "icon_alt": "david launay's public profile on Linkedin",
+          "description": "@david-launay",
+          "url": "https://www.linkedin.com/in/david-launay-178576b1/"
+        },
+        {
+          "title": "Developpement:",
+          "title_hover": "Click here to go to GitHub",
+          "icon": {"prefix" : "fab", "iconName": "faSquareGithub"},
+          "icon_alt": "david launay's public profile on GitHub",
+          "description": "Sward44",
+          "url": "https://github.com/Sward44"
         }
        ],
       "education":[
         {
           "title": "DYMA - On line",
           "description": [
-            "Full Stack since 2024"
+            "Full Stack"
           ],
           "icon": "img/aside/education/dyma-icon.svg",
           "url": "https://dyma.fr/",
@@ -62,7 +74,7 @@
         {
           "title": "Yomi - En ligne",
           "description": [
-            "E-commerce since 2021"
+            "E-commerce - Mindset - AI"
           ],
           "icon": "img/aside/education/yomi-icon.svg",
           "url": "https://www.mindeo.com/",
@@ -72,8 +84,7 @@
         {
           "title": "WSE - Nantes",
           "description": [
-              "Level B2 - 2019",
-              "Level B1 - 2017 to 2018"
+              "English"
             ],
           "icon": "img/aside/education/wse-icon.svg",
           "url": "https://www.wallstreetenglish.fr/",
@@ -83,7 +94,7 @@
         {
           "title": "BEA - Manchester",
           "description": [
-            "Level B1 - 2018"
+            "English"
           ],
           "icon": "img/aside/education/bea-icon.svg",
           "url": "https://www.britannia-school.com/",
@@ -93,7 +104,7 @@
         {
           "title": "CESI - St Nazaire",
           "description": [
-            "Level 1 - 2015 à 2017"
+            "Generalist engineer - Continous improvement"
           ],
           "icon": "img/aside/education/cesi-icon.svg",
           "url": "https://www.cesi.fr/programmes/cycle-preparatoire-integre/?gclid=Cj0KCQjw166aBhDEARIsAMEyZh68XSXVR53vFy_bbvWPGmf0P1un3MW-YcVlMd0bvZs95-7ZLZvnuxoaAkUXEALw_wcB",
@@ -103,7 +114,7 @@
         {
           "title": "AFPI - Nantes",
           "description": [
-            "Level 4 - 1996 à 2000"
+            "BEP & Bac - Mechanical production"
           ],
           "icon": "img/aside/education/afpi-icon.svg",
           "url": "https://www.afpi-acmformation.com/",
@@ -113,7 +124,7 @@
       ],
       "computing":[
         {
-          "title": "HTML & (S)CSS",
+          "title": "Web development",
           "score": ["html", "htmlDot"],
           "icons":[
             {
@@ -130,7 +141,7 @@
           
         },
         {
-          "title": "JS(X) - LINUX",
+          "title": "Data analysis",
           "score": ["js", "jsDot"],
           "icons":[
             {
@@ -156,7 +167,7 @@
           ]
         },
         {
-          "title": "Windows - Office/VB(A).net",
+          "title": "Design",
           "score": ["windows", "windowsDot"],
           "icons":[
             {
@@ -177,7 +188,7 @@
           ] 
         },
         {
-          "title": "PLM - ERP",
+          "title": "CopyWritting",
           "score": ["erp", "erpDot"],
           "icons":[
             {
@@ -194,22 +205,6 @@
               "icon": "img/aside/informatique/sap-icon.svg",
               "url": "https://www.sap.com/france/index.html?url_id=auto_hp_redirect_france",
               "icon_alt": "Enterprise Resource Planning is the definition of the SAP platform used in industries such as aeronautics."
-            }
-          ] 
-        },
-        {
-          "title": "CAO - DAO",
-          "score": ["cao", "caoDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/autocad-icon.svg",
-              "url": "https://www.autodesk.fr/products/autocad/overview?term=1-YEAR&tab=subscription",
-              "icon_alt": "Autocad is a product development tool."
-            },
-            {
-              "icon": "img/aside/informatique/catia-icon.svg",
-              "url": "https://www.3ds.com/products/catia/catia-v5",
-              "icon_alt": "Dassault has created its Enovia platform and developed Catia products to create and program products or assemblies."
             }
           ] 
         }
@@ -275,10 +270,28 @@
     "profil":
       {
         "title_profil": "CAREER PROFILE",
-        "description": "As an expert in cross-functional project management, data analysis, web page creation and continuous improvement, I have acquired extensive professional experience in the aerospace industry. I'm a creative, autonomous, curious and adaptable person, looking to join a dynamic team and get involved in new professional projects. My aim is to help the company achieve customer satisfaction and increase its profits.",
+        "description": "Full-stack developer with over 2 years' experience, specialising in Next.js, React, and MongoDB, with solid telecommuting and freelance expertise. With experience in cross-functional project management and data analysis in the aerospace industry, I'm a creative, self-starter who's ready to get involved in a dynamic team. My aim is to contribute tocontinuous improvement, customer satisfaction andincreased profits for the company.",
         "title_experience" : "WORK EXPERIENCE"
       },
     "experience":[
+      {
+        "title": "Full stack",
+        "entreprise": "Ha Couverture",
+        "location": "St Aignan de Grand Lieu",
+        "date_entrer": "Sep. 2023",
+        "date_sortie": "Aujourd'hui",
+        "url":"https://buzz-ready.com",
+        "icon":"img/main/ha-couverture-icon.svg",
+        "iconPdf": "ha",
+        "icon_alt": "Logo Ha Couverture",
+        "description": "My job at Ha Couverture is to create a website from scratch, work on its SEO to maximise online visibility, and optimise its distribution. This includes image optimisation, integration with social media and indexing on search engines such as Google and Bing. My aim is to ensure an effective and efficient digital presence.",
+        "title_result": "Résultats",
+        "result": [
+          "Creation and deployment ;",
+          "Image and text optimisation ;",
+          "Creation via APIs."
+        ]
+      },
       {
           "title": "Consultant - Data analyst",
           "entreprise": "GE Renewable Energy",
@@ -384,7 +397,7 @@
           ]
         },
         {
-          "title": "Toolmaker - Milling machine - Turner - Grinder - Draughtsman",
+          "title": "Toolmaker - Draughtsman",
           "entreprise": "SARL Chapuis",
           "location": "Auxerre",
           "date_entrer": "Oct. 2001",

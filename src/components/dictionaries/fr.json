@@ -2,12 +2,12 @@
   "document":
     {
       "title": "David Launay - Entrepreneur",
-      "description": "Avec plus de 20 ans d'expérience dans l'industrie innovante, j'ai pivoté avec succès vers l'analyse de données et l'exploitation des nouvelles technologies sur Internet. Mon parcours démontre une adaptabilité impressionnante, combinant expertise technique et vision stratégique, je m'epanouie dans le monde digital.",
+      "description": "Fort de 20 ans d'expérience, j'ai évolué vers l'analyse de données et le référencement moteur de recherche. Mon expertise technique et ma vision stratégique renforcent ma capacité à optimiser la visibilité en ligne, démontrant une adaptabilité et une passion pour le digital.",
       "manifest": "/manifest.json"
     },
   "header":
     {
-      "title": "Data analyste - Intégrateur full-stack"
+      "title": "Full-stack & Designer"
     },
   "aside":
     {
@@ -48,15 +48,23 @@
           "title_hover": "Cliquer ici pour aller sur LinkedIn",
           "icon": {"prefix" : "fab", "iconName": "faLinkedin"},
           "icon_alt": "Profil public sur Linkedin de david launay",
-          "description": "linkedin/david-launay",
+          "description": "@david-launay",
           "url": "https://www.linkedin.com/in/david-launay-178576b1/?locale=fr_FR"
+        },
+        {
+          "title": "Developpement:",
+          "title_hover": "Cliquer ici pour aller sur GitHub",
+          "icon": {"prefix" : "fab", "iconName": "faSquareGithub"},
+          "icon_alt": "Profil public sur GitHub de david launay",
+          "description": "Sward44",
+          "url": "https://github.com/Sward44"
         }
       ],
     "education":[
         {
           "title": "DYMA - En ligne",
           "description": [
-            "Full Stack depuis 2024"
+            "Full Stack"
           ],
           "icon": "img/aside/education/dyma-icon.svg",
           "url": "https://dyma.fr/",
@@ -64,9 +72,9 @@
           "img": "img/aside/education/dyma-html.webp"
         },
         {
-          "title": "Yomi - En ligne",
+          "title": "Mindeo - En ligne",
           "description": [
-            "Formation complète d'e-commerce depuis 2021"
+            "E-commerce - Mindset - AI"
           ],
           "icon": "img/aside/education/yomi-icon.svg",
           "url": "https://www.mindeo.com/",
@@ -76,8 +84,7 @@
         {
           "title": "WSE - Nantes",
           "description": [
-            "Niveau B2 - 2019",
-            "Niveau B1 - 2017 à 2018"
+            "Anglais"
           ],
           "icon": "img/aside/education/wse-icon.svg",
           "url": "https://www.wallstreetenglish.fr/",
@@ -87,7 +94,7 @@
         {
           "title": "BEA - Manchester",
           "description": [
-            "Niveau B1 - 2018"
+            "Anglais"
           ],
           "icon": "img/aside/education/bea-icon.svg",
           "url": "https://www.britannia-school.com/",
@@ -97,7 +104,7 @@
         {
           "title": "CESI - St Nazaire",
           "description": [
-            "Niveau 1 - 2015 à 2017"
+            "Ingénieur généraliste - amélioration continue"
           ],
           "icon": "img/aside/education/cesi-icon.svg",
           "url": "https://www.cesi.fr/programmes/cycle-preparatoire-integre/?gclid=Cj0KCQjw166aBhDEARIsAMEyZh68XSXVR53vFy_bbvWPGmf0P1un3MW-YcVlMd0bvZs95-7ZLZvnuxoaAkUXEALw_wcB",
@@ -107,7 +114,7 @@
         {
           "title": "AFPI - Nantes",
           "description": [
-            "Niveau 4 - 1996 à 2000"
+            "BEP & Bac productique mécanique"
           ],
           "icon": "img/aside/education/afpi-icon.svg",
           "url": "https://www.afpi-acmformation.com/",
@@ -117,7 +124,7 @@
       ],
       "computing": [
         {
-          "title": "HTML & (S)CSS",
+          "title": "Developpement web",
           "score": ["html", "htmlDot"],
           "icons":[
             {
@@ -134,7 +141,7 @@
           
         },
         {
-          "title": "JS(X) - LINUX",
+          "title": "Analyse data",
           "score": ["js", "jsDot"],
           "icons":[
             {
@@ -160,7 +167,7 @@
           ]
         },
         {
-          "title": "Windows - Office/VB(A).net",
+          "title": "Design",
           "score": ["windows", "windowsDot"],
           "icons":[
             {
@@ -181,7 +188,7 @@
           ] 
         },
         {
-          "title": "PLM - ERP",
+          "title": "CopyWritting",
           "score": ["erp", "erpDot"],
           "icons":[
             {
@@ -198,22 +205,6 @@
               "icon": "img/aside/informatique/sap-icon.svg",
               "url": "https://www.sap.com/france/index.html?url_id=auto_hp_redirect_france",
               "icon_alt": "Enterprise Ressource Planning est la définition dont SAP est un plateforme utilisés notament dans l'aéronautique."
-            }
-          ] 
-        },
-        {
-          "title": "CAO - DAO",
-          "score": ["cao", "caoDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/autocad-icon.png",
-              "url": "https://www.autodesk.fr/products/autocad/overview?term=1-YEAR&tab=subscription",
-              "icon_alt": "Autocad est un outils de développement des produits."
-            },
-            {
-              "icon": "img/aside/informatique/catia-icon.svg",
-              "url": "https://www.3ds.com/products/catia/catia-v5",
-              "icon_alt": "Dassault a crée sa plateforme Enovia et developpé les produits Catia pour créer et programmé des produits ou des ensembles."
             }
           ] 
         }
@@ -259,10 +250,28 @@
     "profil":
       {
         "title_profil" : "PROFIL PROFESSIONNEL",
-        "description" : "Expert en management transversal de projets, analyse de données, création de pages web et amélioration continue, j'ai acquis une vaste expérience professionnelle dans l'industrie aérospatiale. Je suis un esprit créatif, autonome, curieux et adaptable, cherchant à rejoindre une équipe dynamique pour m'investir dans de nouveaux projets professionnels. Mon objectif est d'aider l'entreprise à atteindre la satisfaction clientèle et augmenter ses profits.",
+        "description" : "Développeur Full-stack avec plus de 2 ans d'expérience, spécialisé en Next.js, React, et MongoDB, avec une solide expertise en télétravail et freelance. Fort d'une expérience en management transversal de projets et en analyse de données dans l'industrie aérospatiale, je suis un esprit créatif et autonome, prêt à m'investir dans une équipe dynamique. Mon objectif est de contribuer à l'amélioration continue, à la satisfaction clientèle, et à l'augmentation des profits de l'entreprise.",
         "title_experience" : "EXPÉRIENCES PROFESSIONNELLES"
       },
     "experience": [
+      {
+        "title": "Full stack",
+        "entreprise": "Ha Couverture",
+        "location": "St Aignan de Grand Lieu",
+        "date_entrer": "Sep. 2023",
+        "date_sortie": "Aujourd'hui",
+        "url":"https://buzz-ready.com",
+        "icon":"img/main/ha-couverture-icon.svg",
+        "iconPdf": "ha",
+        "icon_alt": "Logo Ha Couverture",
+        "description": "Ma mission chez 'Ha Couverture' consiste à créer un site web de A à Z, à travailler son référencement pour maximiser sa visibilité en ligne, et à optimiser sa diffusion. Cela inclut l'optimisation des images, l'intégration avec les réseaux sociaux, ainsi que le référencement sur les moteurs de recherche comme Google et Bing. Mon objectif est de garantir une présence digitale efficace et performante.",
+        "title_result": "Résultats",
+        "result": [
+          "Création et déploiement ;",
+          "Optimisation des images et des textes ;",
+          "Création via les APIs."
+        ]
+      },
       {
         "title": "Consultant - Data analyste",
         "entreprise": "GE Renewable Energy",
@@ -271,6 +280,7 @@
         "date_sortie": "Jui. 2023",
         "url":"https://www.ge.com/renewableenergy/wind-energy/offshore-wind",
         "icon":"img/main/general_electric_icon.svg",
+        "iconPdf": "ge",
         "icon_alt": "Logo General Electric",
         "description": "Recruté chez General Electric, j'ai travaillé dans le département de gestion de l'amélioration continue du produit. J'ai créé des packages de modules de sous-traitance et géré les relations avec les partenaires. J'ai également effectué l'analyse des unités avec une sélection des unités dans les projets, en utilisant des outils tels que VBA puis j'ai tracé l'ensemble des comparaisons à l'aide de téléchargements de toutes les unités et effectués l'analyses avec VBA.",
         "title_result": "Résultats",
@@ -289,6 +299,7 @@
         "date_sortie": "Avr. 2021",
         "url":"https://www.juignet.fr/",
         "icon":"img/main/juignet-icon.svg",
+        "iconPdf": "juignet",
         "icon_alt": "Logo Juignet",
         "description": "J'ai également travaillé en tant que coach pour des équipes et j'ai piloté la mise en place d'un ERP pour la gestion des achats. J'ai mis en place une automatisation des plannings sur Excel via VBA pour améliorer l'efficacité, la productivité et anticipé les recrutements de l'équipe. En outre, j'ai rédigé et déployé des fiches de sécurité pour garantir le respect des normes de sécurité en vigueur et j'ai programmé des machines pour améliorer les processus de production et optimiser les performances.",
         "title_result": "Résultats",
@@ -306,6 +317,7 @@
         "date_sortie": "Jun. 2017",
         "url":"http://www.rabas.fr/",
         "icon":"img/main/rabas-icon.svg",
+        "iconPdf": "rabas",
         "icon_alt": "Logo Rabas",
         "description": "En tant que manager d'équipes d'amélioration et coach, j'ai suivi la méthode DINAMIC pour optimiser l'usinage de la masse et améliorer les changements de production sur 15 machines. J'ai également créé des lignes plus flexibles, réduisant ainsi les erreurs et augmentant la production. J'ai déployé des annexes ERP telles que Satelites Helios pour suivre en temps réel les changements de plannings et réduire le stock global.",
         "title_result": "Résultats",
@@ -325,6 +337,7 @@
         "date_sortie": "Oct. 2016",
         "url":"https://www.airbus.com/en/products-services/commercial-aircraft",
         "icon":"img/main/airbus-icon.svg",
+        "iconPdf": "airbus",
         "icon_alt": "Logo Airbus",
         "description": "Expérience dans l'assemblage de caissons centraux de voilures pour les programmes A320, A330 et A350. Tâches effectuées : constitution des panneaux, assemblages semi-automatisés sur machine, finition des panneaux et démoulages. J'ai également été chargé de remplacer des postes sur les lignes de production des caissons, du départ des lignes à la livraison (de Nantes à St Nazaire), ainsi que de gérer la logistique des éléments ne nécessitant aucune modification pour tous les programmes.",
         "title_result": "Résultats",
@@ -368,7 +381,7 @@
         ]
       },
       {
-        "title": "Outilleur - Fraiseur - Tourneur - Rectifieur - Dessinateur",
+        "title": "Outilleur - Dessinateur",
         "entreprise": "SARL Chapuis",
         "location": "Auxerre",
         "date_entrer": "Oct. 2001",

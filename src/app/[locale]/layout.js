@@ -34,9 +34,10 @@ export function generateStaticParams() {
   }));
 }
 export default async function RootLayout({ children, params }) {
+  // console.log(params);
   return (
     <html lang={params.locale}>
-      <body className={`${mulish.variable} gridContainer`}>{children}</body>
+      <body className={mulish.variable}>{children}</body>
     </html>
   );
 }
