@@ -1,13 +1,14 @@
 import styles from "./Header.module.scss";
 import TelechargerPDF from "@/components/pdf/TelechargerPDF";
 
-export default async function Header({ title }) {
+export default async function Header({ title, locale }) {
+  console.log("Paramètre locale dans Header : ", locale);
   return (
     <header className={styles.header}>
       <h1>David Launay</h1>
       <span>
         <p>{title}</p>
-        <TelechargerPDF />
+        <TelechargerPDF locale={locale} />
       </span>
     </header>
   );

@@ -8,10 +8,11 @@ import Selection from "@/components/home/selection/Selection";
 import Footer from "@/components/home/footer/Footer";
 
 export default async function Home({ params: { locale } }) {
+  console.log("Paramètre locale : ", locale);
   const dict = await getDictionary(locale);
   return (
     <span className="gridContainer">
-      <Header title={dict.header.title} />
+      <Header title={dict.header.title} locale={locale} />
       <Section />
       <Main main={dict.main} />
       <Aside aside={dict.aside} />

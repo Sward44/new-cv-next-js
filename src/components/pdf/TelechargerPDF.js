@@ -8,7 +8,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-function TelechargerPDF() {
+function TelechargerPDF({ locale }) {
+  console.log("Paramètre locale dans TelechargerPDF : ", locale);
   const iframeRef = React.useRef(null);
   const [isHoveredPDF, setIsHoveredPDF] = React.useState(false);
   const [isHoveredDownload, setIsHoveredDownload] = React.useState(false);
@@ -28,7 +29,7 @@ function TelechargerPDF() {
   };
   return (
     <>
-      <Link href="fr/20240828_CV_David-Launay_fr.pdf">
+      <Link href={`${locale}/20240830_CV_David-Launay_${locale}.pdf`}>
         <FontAwesomeIcon
           icon={faFilePdf}
           onMouseEnter={handleMouseEnter}
@@ -45,8 +46,8 @@ function TelechargerPDF() {
         />
       </Link>
       <a
-        href="fr/20240828_CV_David-Launay_fr.pdf"
-        download="20240828_CV_David-Launay_fr.pdf"
+        href={`${locale}/20240830_CV_David-Launay_${locale}.pdf`}
+        download={`20240830_CV_David-Launay_${locale}.pdf`}
       >
         <FontAwesomeIcon
           icon={faDownload}
@@ -67,7 +68,7 @@ function TelechargerPDF() {
         ref={iframeRef}
         title="print"
         style={{ display: "none" }}
-        src="fr/20240828_CV_David-Launay_fr.pdf"
+        src={`${locale}/20240830_CV_David-Launay_${locale}.pdf`}
       />
       <span
         style={{
