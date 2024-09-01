@@ -3,34 +3,34 @@
 		<url>
 			<loc>https://david-launay.com/en</loc>
 			<changefreq>always</changefreq>
-			<prority>1</prority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://david-launay.com/fr</loc>
 			<changefreq>always</changefreq>
-			<prority>1</prority>
+			<priority>1</priority>
 		</url>
 		<url>
 			<loc>https://david-launay.com/en/20240830_CV_David-Launay_en.pdf</loc>
 			<changefreq>always</changefreq>
-			<prority>0.8</prority>
+			<priority>0.8</priority>
 		</url>
 		<url>
 			<loc>https://david-launay.com/fr/20240830_CV_David-Launay_fr.pdf</loc>
 			<changefreq>always</changefreq>
-			<prority>0.8</prority>
+			<priority>0.8</priority>
 		</url>
 
 		<url>
 			<loc>https://david-launay.com/telto:+33636946970</loc>
 			<changefreq>never</changefreq>
-			<prority>0.5</prority>
+			<priority>0.5</priority>
 		</url>
 
 		<url>
 			<loc>https://david-launay.com/mailto:davidlaunay567@gmail.com</loc>
 			<changefreq>never</changefreq>
-			<prority>0.5</prority>
+			<priority>0.5</priority>
 		</url>
 	</urlset>
 
