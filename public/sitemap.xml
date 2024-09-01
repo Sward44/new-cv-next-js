@@ -3,12 +3,12 @@
 		<url>
 			<loc>https://david-launay.com/en</loc>
 			<changefreq>always</changefreq>
-			<prority>1.0</prority>
+			<prority>1</prority>
 		</url>
 		<url>
 			<loc>https://david-launay.com/fr</loc>
 			<changefreq>always</changefreq>
-			<prority>1.0</prority>
+			<prority>1</prority>
 		</url>
 		<url>
 			<loc>https://david-launay.com/en/20240830_CV_David-Launay_en.pdf</loc>
