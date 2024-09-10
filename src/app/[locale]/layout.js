@@ -1,4 +1,5 @@
 import "./globals.scss";
+import { Analytics } from "@vercel/analytics/react";
 import { mulish } from "@/fonts/fonts";
 import { availableLocales } from "@/utils/i18n";
 import { getDictionary } from "./dictionaries";
@@ -36,7 +37,10 @@ export function generateStaticParams() {
 export default async function RootLayout({ children, params }) {
   return (
     <html lang={params.locale}>
-      <body className={mulish.variable}>{children}</body>
+      <body className={mulish.variable}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
