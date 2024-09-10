@@ -1,6 +1,6 @@
 import React from "react";
 // import { SpeedInsights } from "@vercel/speed-insights/next";
-// import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react";
 import Favicons from "../components/favicons/Favions";
 
 function MyApp({ Component, pageProps }) {
@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <Favicons />
       <Component {...pageProps} />
-      {/* <SpeedInsights />
-      <Analytics /> */}
+      {/* <SpeedInsights />*/}
+      <Analytics />
     </>
   );
 }
