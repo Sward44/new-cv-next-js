@@ -52,7 +52,7 @@ export async function POST(req) {
 
     await newPost.save();
 
-    await email.getTemplate("welcome-email-ghost", {
+    await email.getTemplate("welcomeEmailGhost", {
       bienvenue: "Bienvenue sur david-launay.com",
       siteUrl: "https://david-launay.com",
       email: "davidlaunay567@gmail.com",
