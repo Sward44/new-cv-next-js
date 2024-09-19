@@ -3,10 +3,21 @@ import { connectMongoose } from "@/utils/Mongoose";
 import { UserModel, PostModel } from "@/models/index";
 import email from "@/utils/email";
 
-export const PUT = async (req) => {
-  const body = await req.json();
+export async function POST(req) {
+  if (req.method === "OPTIONS") {
+    return new NextResponse(null, {
+      status: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    });
+  }
   try {
     await connectMongoose();
+    const body = await req.json();
+
     const existingUser = await UserModel.findOne({ email: body.email }).exec();
     if (!existingUser) {
       return NextResponse.json(
@@ -71,4 +82,15 @@ export const PUT = async (req) => {
       }
     );
   }
-};
+}
+
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
+}

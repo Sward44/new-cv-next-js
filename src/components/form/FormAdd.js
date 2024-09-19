@@ -78,7 +78,7 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
       newEmailWithoutId.phone =
         newEmailWithoutId.indicatif + newEmailWithoutId.number;
       const response = await fetch(`${locale}/api/post`, {
-        method: "PUT",
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
