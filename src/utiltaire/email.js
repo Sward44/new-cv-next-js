@@ -1,7 +1,7 @@
 "server only";
 import nodemailer from "nodemailer";
 import pug from "pug";
-// import fs from "fs";
+import path from "path";
 class Email {
   constructor() {
     this.transporter = nodemailer.createTransport({
@@ -16,7 +16,10 @@ class Email {
   async getTemplate(templateName, options) {
     try {
       const template = pug.renderFile(
-        `src/utiltaire/emailTemplate/${templateName}.pug`,
+        path.join(
+          process.cwd(),
+          `src/utiltaire/emailTemplate/${templateName}.pug`
+        ),
         options
       );
       const data = await this.transporter.sendMail({
