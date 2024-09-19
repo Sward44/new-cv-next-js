@@ -2,7 +2,10 @@ import { NextResponse } from "next/server";
 import { connectMongoose } from "@/utils/Mongoose";
 import { UserModel } from "@/models/index";
 
-export const POST = async (req) => {
+export async function POST(req) {
+  console.log("API route called"); // Debug log
+
+  // Handle CORS
   if (req.method === "OPTIONS") {
     return new NextResponse(null, {
       status: 200,
@@ -14,9 +17,11 @@ export const POST = async (req) => {
     });
   }
 
-  await connectMongoose();
   try {
+    await connectMongoose();
     const body = await req.json();
+    console.log("Received body:", body); // Debug log
+
     const existingUser = await UserModel.findOne({ email: body.email }).exec();
     if (existingUser) {
       const userObject = existingUser.toObject();
@@ -53,17 +58,20 @@ export const POST = async (req) => {
     }
   } catch (error) {
     console.error("Error in user API route:", error);
-    return new NextResponse(JSON.stringify({ error: "Erreur de serveur" }), {
-      status: 500,
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-    });
+    return new NextResponse(
+      JSON.stringify({ error: error.message || "Erreur de serveur" }),
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      }
+    );
   }
-};
+}
 
-export const OPTIONS = async () => {
+export async function OPTIONS() {
   return new NextResponse(null, {
     status: 200,
     headers: {
@@ -72,4 +80,4 @@ export const OPTIONS = async () => {
       "Access-Control-Allow-Headers": "Content-Type, Authorization",
     },
   });
-};
+}
