@@ -7,8 +7,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import styles from "./FormAdd.module.scss";
 
-function FormAdd({ onNewEmailReceive, handlePopup, formulaire }) {
-  console.log("Reception des données : ", onNewEmailReceive.name);
+function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
   const [defaultValues, setDefaultValues] = React.useState({});
   const [isLoading, setIsLoading] = useState(false);
   const isFinish = useRef(false);
@@ -80,13 +79,16 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire }) {
       newEmailWithoutId.phone =
         newEmailWithoutId.indicatif + newEmailWithoutId.number;
       console.log(newEmailWithoutId);
-      const response = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/post`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newEmailWithoutId),
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_HOST}/${locale}/api/post`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newEmailWithoutId),
+        }
+      );
       if (response.ok) {
         const newEmailFooter = await response.json();
         isFinish.current = true;

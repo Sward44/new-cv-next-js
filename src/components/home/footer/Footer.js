@@ -22,6 +22,7 @@ export default function Footer({ footer, formulaire }) {
   }
 
   const locale = useCurrentLanguages();
+  console.log(locale);
   const defaultValues = {
     email: "",
     done: false,
@@ -48,13 +49,16 @@ export default function Footer({ footer, formulaire }) {
   async function submit(values) {
     try {
       clearErrors();
-      const response = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/user`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_HOST}/${locale}/api/user`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      );
       if (response.ok) {
         const newEmailFooter = await response.json();
         newEmailFooter.done = !newEmailFooter.done;
@@ -119,6 +123,7 @@ export default function Footer({ footer, formulaire }) {
           onNewEmailReceive={newEmail}
           handlePopup={handlePopup}
           formulaire={formulaire}
+          locale={locale}
         />
       )}
     </>
