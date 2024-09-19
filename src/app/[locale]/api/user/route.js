@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { connectMongoose } from "@/utils/Mongoose";
+import { connectMongoose } from "@/utiltaire/Mongoose";
 import { UserModel } from "@/models/index";
 
 export async function POST(req) {

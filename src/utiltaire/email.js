@@ -16,7 +16,7 @@ class Email {
   async getTemplate(templateName, options) {
     try {
       const template = pug.renderFile(
-        `src/utils/email-template/${templateName}.pug`,
+        `src/utiltaire/emailTemplate/${templateName}.pug`,
         options
       );
       const data = await this.transporter.sendMail({

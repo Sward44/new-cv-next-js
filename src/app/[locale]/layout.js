@@ -1,7 +1,7 @@
 import "./globals.scss";
 import { Analytics } from "@vercel/analytics/react";
 import { mulish } from "@/fonts/fonts";
-import { availableLocales } from "@/utils/i18n";
+import { availableLocales } from "@/utiltaire/i18n";
 import { getDictionary } from "./dictionaries";
 
 export async function generateMetadata({ params }) {

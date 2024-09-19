@@ -1,5 +1,5 @@
 import { useParams } from "next/navigation";
-import { defaultLocale } from "../utils/i18n";
+import { defaultLocale } from "../utiltaire/i18n";
 
 export const useCurrentLanguages = () => {
   const params = useParams();

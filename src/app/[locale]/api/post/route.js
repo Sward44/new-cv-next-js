@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { connectMongoose } from "@/utils/Mongoose";
+import { connectMongoose } from "@/utiltaire/Mongoose";
 import { UserModel, PostModel } from "@/models/index";
-import email from "@/utils/email";
+import email from "@/utiltaire/email";
 
 export async function POST(req) {
   if (req.method === "OPTIONS") {
