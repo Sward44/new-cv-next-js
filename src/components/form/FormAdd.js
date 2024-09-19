@@ -74,11 +74,9 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
     try {
       setIsLoading(true);
       clearErrors();
-      console.log(values);
       const newEmailWithoutId = values;
       newEmailWithoutId.phone =
         newEmailWithoutId.indicatif + newEmailWithoutId.number;
-      console.log(newEmailWithoutId);
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_HOST}/${locale}/api/post`,
         {

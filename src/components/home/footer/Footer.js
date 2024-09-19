@@ -22,7 +22,6 @@ export default function Footer({ footer, formulaire }) {
   }
 
   const locale = useCurrentLanguages();
-  console.log(locale);
   const defaultValues = {
     email: "",
     done: false,
