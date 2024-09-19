@@ -77,16 +77,13 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
       const newEmailWithoutId = values;
       newEmailWithoutId.phone =
         newEmailWithoutId.indicatif + newEmailWithoutId.number;
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_HOST}/${locale}/api/post`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newEmailWithoutId),
-        }
-      );
+      const response = await fetch(`${locale}/api/post`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newEmailWithoutId),
+      });
       if (response.ok) {
         const newEmailFooter = await response.json();
         isFinish.current = true;

@@ -48,7 +48,6 @@ export default function Footer({ footer, formulaire }) {
   async function submit(values) {
     try {
       clearErrors();
-      console.log("Submitting form with values:", values); // Debug log
       const response = await fetch(`${locale}/api/user`, {
         method: "POST",
         headers: {
@@ -56,22 +55,18 @@ export default function Footer({ footer, formulaire }) {
         },
         body: JSON.stringify(values),
       });
-      console.log("Response status:", response.status); // Debug log
       if (response.ok) {
         const newEmailFooter = await response.json();
-        console.log("Received data:", newEmailFooter); // Debug log
         newEmailFooter.done = !newEmailFooter.done;
         onNewEmailReceived(newEmailFooter.message);
         reset(defaultValues);
       } else {
-        console.error("Error response:", await response.text()); // Debug log
         setError("generic", {
           type: "generic",
           message: formulaire.message.generic.else,
         });
       }
     } catch (e) {
-      console.error("Fetch error:", e); // Debug log
       setError("generic", {
         type: "generic",
         message: formulaire.message.generic.catch,

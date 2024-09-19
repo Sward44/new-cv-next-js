@@ -3,9 +3,6 @@ import { connectMongoose } from "@/utils/Mongoose";
 import { UserModel } from "@/models/index";
 
 export async function POST(req) {
-  console.log("API route called"); // Debug log
-
-  // Handle CORS
   if (req.method === "OPTIONS") {
     return new NextResponse(null, {
       status: 200,
@@ -20,7 +17,6 @@ export async function POST(req) {
   try {
     await connectMongoose();
     const body = await req.json();
-    console.log("Received body:", body); // Debug log
 
     const existingUser = await UserModel.findOne({ email: body.email }).exec();
     if (existingUser) {
