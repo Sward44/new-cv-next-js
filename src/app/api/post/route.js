@@ -1,14 +1,13 @@
 import { NextResponse } from "next/server";
-import connect from "../../../../Mongoose";
-import User from "../../../../models/User";
-import Post from "../../../../models/Post";
+import { connectMongoose } from "@/utils/Mongoose";
+import { UserModel, PostModel } from "@/models/index";
 import email from "@/utils/email";
 
 export const PUT = async (req) => {
   const body = await req.json();
   try {
-    await connect();
-    const existingUser = await User.findOne({ _id: body._id }).exec();
+    await connectMongoose();
+    const existingUser = await UserModel.findOne({ email: body.email }).exec();
     if (!existingUser) {
       return NextResponse.json(
         { error: "Utilisateur non trouvé" },
@@ -35,7 +34,7 @@ export const PUT = async (req) => {
     existingUser.site = body.site;
     await existingUser.save();
 
-    const newPost = new Post({
+    const newPost = new PostModel({
       user: existingUser._id,
       body: body.comments,
     });

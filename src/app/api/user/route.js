@@ -1,31 +1,45 @@
 import { NextResponse } from "next/server";
-import connect from "../../../../Mongoose";
-import User from "../../../../models/User";
+import { connectMongoose } from "@/utils/Mongoose";
+import { UserModel } from "@/models/index";
 
 export const POST = async (req) => {
   const body = await req.json();
-  console.log(body);
-
+  await connectMongoose();
   try {
-    await connect();
-    const existingUser = await User.findOne({ email: body.email }).exec();
+    const existingUser = await UserModel.findOne({ email: body.email }).exec();
     if (existingUser) {
-      return NextResponse.json(existingUser.toObject(), {
-        status: 200,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const userObject = existingUser.toObject();
+      const { _id, createdAt, updatedAt, __v, ...existingUserWithout } =
+        userObject;
+      return NextResponse.json(
+        { message: existingUserWithout },
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
     } else {
-      const newUser = new User(body);
+      const newUser = new UserModel({
+        email: body.email,
+        done: body.done,
+      });
       await newUser.save();
 
-      return NextResponse.json(newUser.toObject(), {
-        status: 200,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const newUserObject = newUser.toObject();
+      const { _id, createdAt, updatedAt, __v, ...newUserWithout } =
+        newUserObject;
+
+      return NextResponse.json(
+        { message: newUserWithout },
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
     }
   } catch (error) {
     return NextResponse.json(

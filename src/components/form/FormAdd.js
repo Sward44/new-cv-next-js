@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactCountryFlag from "react-country-flag";
 import { useForm } from "react-hook-form";
@@ -8,8 +8,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import styles from "./FormAdd.module.scss";
 
 function FormAdd({ onNewEmailReceive, handlePopup, formulaire }) {
-  // console.log(onNewEmailReceive);
-  // console.log(formulaire);
+  console.log("Reception des données : ", onNewEmailReceive.name);
+  const [defaultValues, setDefaultValues] = React.useState({});
   const [isLoading, setIsLoading] = useState(false);
   const isFinish = useRef(false);
   const options = [
@@ -18,16 +18,24 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire }) {
     { optionValue: "+1", valueFlag: "US" },
   ];
 
-  const defaultValues = {
-    _id: onNewEmailReceive["_id"],
-    email: onNewEmailReceive["email"],
-    name: "",
-    surname: "",
-    createdAt: onNewEmailReceive["createdAt"],
-    updatedAt: onNewEmailReceive["updatedAt"],
-    done: onNewEmailReceive["done"],
-    site: "https://",
-  };
+  React.useEffect(() => {
+    const fetchDefaultValuesSession = async () => {
+      const values = {
+        email: onNewEmailReceive.email,
+        site: "https://",
+        name: onNewEmailReceive?.name ? onNewEmailReceive.name : "",
+        surname: onNewEmailReceive?.surname ? onNewEmailReceive.surname : "",
+        number: onNewEmailReceive?.phone
+          ? `0${onNewEmailReceive.phone.slice(
+              3,
+              onNewEmailReceive.phone.length + 1
+            )}`
+          : "",
+      };
+      setDefaultValues(values);
+    };
+    fetchDefaultValuesSession();
+  }, [onNewEmailReceive]);
 
   const schema = yup.object({
     email: yup
@@ -46,6 +54,7 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire }) {
     done: yup.boolean(),
     comments: yup.string(),
   });
+
   const {
     register,
     handleSubmit,
@@ -57,6 +66,10 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire }) {
     defaultValues,
     resolver: yupResolver(schema),
   });
+
+  React.useEffect(() => {
+    reset(defaultValues);
+  }, [defaultValues, reset]);
 
   async function submit(values) {
     try {
@@ -125,7 +138,7 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire }) {
                 id="email"
                 type="text"
                 {...register("email")}
-                defaultValues={"email"}
+                // defaultValues={"email"}
               ></input>
               {errors?.email && (
                 <p className={styles.errors}>{errors.email.message}</p>
@@ -140,7 +153,7 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire }) {
                 id="site"
                 type="text"
                 {...register("site")}
-                defaultValues={"site"}
+                // defaultValues={"site"}
               />
               {errors?.site && (
                 <p className={styles.errors}>{errors.site.message}</p>

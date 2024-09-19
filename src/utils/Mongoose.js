@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const connect = async () => {
+const connectMongoose = async () => {
   try {
-    await mongoose.connect(process.env.DATABASE_URL, {
+    await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -12,4 +12,4 @@ const connect = async () => {
   }
 };
 
-export default connect;
+export { connectMongoose };

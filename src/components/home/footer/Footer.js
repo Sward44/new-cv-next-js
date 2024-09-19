@@ -9,11 +9,11 @@ import FormAdd from "@/components/form/FormAdd";
 import styles from "./Footer.module.scss";
 
 export default function Footer({ footer, formulaire }) {
-  const [newEmail, setNewEmail] = useState([]);
+  const [newEmail, setNewEmail] = useState({});
   const [popup, setPopup] = useState(false);
 
   function onNewEmailReceived(emailReceive) {
-    setNewEmail([...newEmail, emailReceive]);
+    setNewEmail(emailReceive);
     setPopup(true);
   }
 
@@ -58,7 +58,7 @@ export default function Footer({ footer, formulaire }) {
       if (response.ok) {
         const newEmailFooter = await response.json();
         newEmailFooter.done = !newEmailFooter.done;
-        onNewEmailReceived(newEmailFooter);
+        onNewEmailReceived(newEmailFooter.message);
         reset(defaultValues);
       } else {
         setError("generic", {
@@ -116,7 +116,7 @@ export default function Footer({ footer, formulaire }) {
       </footer>
       {popup && (
         <FormAdd
-          onNewEmailReceive={newEmail[0]}
+          onNewEmailReceive={newEmail}
           handlePopup={handlePopup}
           formulaire={formulaire}
         />
