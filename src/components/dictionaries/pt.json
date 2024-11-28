@@ -1,0 +1,472 @@
+{
+  "document":
+    {
+      "title": "David Launay - Empreiteiro",
+      "description": "Com 20 anos de experiência, dediquei-me à análise de dados e à otimização dos motores de busca. Os meus conhecimentos técnicos e a minha visão estratégica reforçam a minha capacidade de otimizar a visibilidade online, demonstrando a minha adaptabilidade e paixão pelo digital.",
+      "manifest": "/manifest.json"
+    },
+  "header":
+    {
+      "title": "Full-stack e Designer"
+    },
+  "aside":
+    {
+      "section": [
+        "CONTACTO",
+        "EDUCAÇÃO",
+        "COMPETÊNCIAS",
+        "LÍNGUAS",
+        "PONTO DE INTERESSE"
+      ],
+      "contact":[
+        {
+          "title": "Telefone :",
+          "title_hover": "Clique aqui para telefonar",
+          "icon": {"prefix" : "fas", "iconName": "faPhone"},
+          "icon_alt": "Chamada de david launay",
+          "description": "+33 (0)6 36 94 69 70",
+          "url": "telto:+33636946970"
+        },
+        {
+          "title": "Email :",
+          "title_hover": "Clique aqui para enviar um e-mail",
+          "icon": {"prefix" : "fas", "iconName": "faEnvelope"},
+          "icon_alt": "Enviar um e-mail a david launay",
+          "description": "davidlaunay567@gmail.com",
+          "url": "mailto:davidlaunay567@gmail.com"
+        },
+        {
+          "title": "Endereço :",
+          "title_hover": "Clique aqui para saber mais sobre o sector",
+          "icon": {"prefix" : "fas", "iconName": "faLocationDot"},
+          "icon_alt": "Endereço de david launay",
+          "description": "Le Pellerin, France",
+          "url": "https://goo.gl/maps/67yWc4vdLkcJh1op7"
+        },
+        {
+          "title": "Social:",
+          "title_hover": "Clique aqui para aceder ao LinkedIn",
+          "icon": {"prefix" : "fab", "iconName": "faLinkedin"},
+          "icon_alt": "Perfil público de david launay no Linkedin",
+          "description": "@david-launay",
+          "url": "https://www.linkedin.com/in/david-launay-178576b1/?locale=fr_FR"
+        },
+        {
+          "title": "Desenvolvimento:",
+          "title_hover": "Clique aqui para ir para o GitHub",
+          "icon": {"prefix" : "fab", "iconName": "faSquareGithub"},
+          "icon_alt": "Perfil público de david launay no GitHub",
+          "description": "Sward44",
+          "url": "https://github.com/Sward44"
+        }
+      ],
+    "education":[
+        {
+          "title": "DYMA - Em linha",
+          "description": [
+            "Full Stack"
+          ],
+          "icon": "img/aside/education/dyma-icon.svg",
+          "url": "https://dyma.fr/",
+          "icon_alt": "Dyma - Formação em desenvolvimento de sítios Web.",
+          "img": "img/aside/education/dyma-html.webp"
+        },
+        {
+          "title": "Mindeo - Em linha",
+          "description": [
+            "E-commerce - Mentalidade - IA"
+          ],
+          "icon": "img/aside/education/mindeo-icon.svg",
+          "url": "https://www.mindeo.com/",
+          "icon_alt": "Yomi - Formação completa sobre o sítio e-commerce.",
+          "img": "img/aside/education/mindeo-html.webp"
+        },
+        {
+          "title": "WSE - Nantes",
+          "description": [
+            "Inglês"
+          ],
+          "icon": "img/aside/education/wse-icon.svg",
+          "url": "https://www.wallstreetenglish.fr/",
+          "icon_alt": "Wall Street English - Formação em língua inglesa.",
+          "img": "img/aside/education/wse-html.webp"
+        },
+        {
+          "title": "BEA - Manchester",
+          "description": [
+            "Inglês"
+          ],
+          "icon": "img/aside/education/bea-icon.svg",
+          "url": "https://www.britannia-school.com/",
+          "icon_alt": "British English Academy - Formação em língua inglesa.",
+          "img": "img/aside/education/bea-html.webp"
+        },
+        {
+          "title": "CESI - St Nazaire",
+          "description": [
+            "Engenheiro geral - melhoria contínua"
+          ],
+          "icon": "img/aside/education/cesi-icon.svg",
+          "url": "https://www.cesi.fr/programmes/cycle-preparatoire-integre/?gclid=Cj0KCQjw166aBhDEARIsAMEyZh68XSXVR53vFy_bbvWPGmf0P1un3MW-YcVlMd0bvZs95-7ZLZvnuxoaAkUXEALw_wcB",
+          "icon_alt": "CESI - Formação de engenheiro geral com especialização em melhoria contínua.",
+          "img": "img/aside/education/cesi-html.webp"
+        },
+        {
+          "title": "AFPI - Nantes",
+          "description": [
+            "BEP & Bac na produção mecânica"
+          ],
+          "icon": "img/aside/education/afpi-icon.svg",
+          "url": "https://www.afpi-acmformation.com/",
+          "icon_alt": "AFPI -Formação em produção mecânica Bac e BEP.",
+          "img": "img/aside/education/afpi-html.webp"
+        }
+      ],
+      "computing": [
+        {
+          "title": "Desenvolvimento Web",
+          "score": ["html", "htmlDot"],
+          "icons":[
+            {
+              "icon": "img/aside/informatique/html-css-icon.svg",
+              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5dab7f032482b13eb493df12",
+              "icon_alt": "Linguagem utilizada nos navegadores : HTML-CSS-JS."
+            },
+            {
+              "icon": "img/aside/informatique/sass-icon.svg",
+              "url": "https://sass-lang.com/",
+              "icon_alt": "Compilation du CSS après écriture SCSS."
+            }
+          ]
+          
+        },
+        {
+          "title": "Análise de dados",
+          "score": ["js", "jsDot"],
+          "icons":[
+            {
+              "icon": "img/aside/informatique/js-icon.svg",
+              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
+              "icon_alt": "Language utilisé pour animé dans les navigateurs et envoyé les données sur le serveur : JS."
+            },
+            {
+              "icon": "img/aside/informatique/react-icon.svg",
+              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/628e08287436c6ee0c1480b9",
+              "icon_alt": "React est un language utilisé pour créer, compiler et minifier des designs modernes : JS(X), TS(X)."
+            },
+            {
+              "icon": "img/aside/informatique/next-icon.svg",
+              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/64157e14383e2a02a5c7e82c",
+              "icon_alt": "Next est un langage utilisé pour compiler le langage html, css, javascipt côté serveur en surcouche de React."
+            },
+            {
+              "icon": "img/aside/informatique/linux-icon.svg",
+              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5f39a9aa3298c65e1adc38a6",
+              "icon_alt": "Plateforme fonctionant sous Linux avec des définitons proches entre les OS-Linux."
+            }
+          ]
+        },
+        {
+          "title": "Design",
+          "score": ["windows", "windowsDot"],
+          "icons":[
+            {
+              "icon": "img/aside/informatique/windows-icon.svg",
+              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
+              "icon_alt": "Plateforme fonctionant sous Windows."
+            },
+            {
+              "icon": "img/aside/informatique/office-icon.svg",
+              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/628e08287436c6ee0c1480b9",
+              "icon_alt": "Office est la suite de logiciel bureautique Windows."
+            },
+            {
+              "icon": "img/aside/informatique/vb-icon.svg",
+              "url": "https://learn.microsoft.com/fr-fr/dotnet/visual-basic/",
+              "icon_alt": "Visual Basic pour programmé toutes les applications avec un langage compilé et VBA pour créer des programmes pour les applications Office."
+            }
+          ] 
+        },
+        {
+          "title": "CopyWriting",
+          "score": ["erp", "erpDot"],
+          "icons":[
+            {
+              "icon": "img/aside/informatique/aras-icon.svg",
+              "url": "https://www.aras.com/fr-fr",
+              "icon_alt": "Product Life Management est la définition de PLM dont Aras est une plateforme issue d'Oracle."
+            },
+            {
+              "icon": "img/aside/informatique/catia-icon.svg",
+              "url": "https://www.3ds.com/products/catia",
+              "icon_alt": "Product Life Management est la définition de PLM dont Enovia est une plateforme issue de Dassault Systèmes."
+            },
+            {
+              "icon": "img/aside/informatique/sap-icon.svg",
+              "url": "https://www.sap.com/france/index.html?url_id=auto_hp_redirect_france",
+              "icon_alt": "Enterprise Ressource Planning est la définition dont SAP est un plateforme utilisés notament dans l'aéronautique."
+            }
+          ] 
+        }
+      ],
+      "langue":[
+        {
+          "starCount":5,
+          "icon_alt": "Conhecimentos linguísticos em francês",
+          "flag": "img/aside/langues/france-icon.svg",
+          "flag_alt": "Bandeira de França"
+        },
+        {
+          "starCount":3,
+          "icon_alt": "Conhecimentos linguísticos em inglês",
+          "flag": "img/aside/langues/uk-icon.svg",
+          "flag_alt": "Bandeira do Reino-Unido"
+        }
+      ],
+      "hobbies":[
+        {
+          "icon": "img/aside/hobbies/around.svg",
+          "icon_alt": "Em todo o mundo"
+        },
+        {
+          "icon": "img/aside/hobbies/computer.svg",
+          "icon_alt": "Gosta de programar"
+        },
+        {
+          "icon": "img/aside/hobbies/traveler.svg",
+          "icon_alt": "Gosta de caminhar"
+        },
+        {
+          "icon": "img/aside/hobbies/fishing.svg",
+          "icon_alt": "Gosta de pescar"
+        },
+        {
+          "icon": "img/aside/hobbies/hunting.svg",
+          "icon_alt": "Gosta de caçar com um arco"
+        }
+      ]
+    },
+  "main": {
+    "profil":
+      {
+        "title_profil" : "PERFIL PROFISSIONAL",
+        "description" : "Programador full-stack com mais de 2 anos de experiência, especializado em Next.js, React e MongoDB, com sólida experiência em teletrabalho e freelance. Com experiência em gestão de projectos multifuncionais e análise de dados na indústria aeroespacial, sou uma pessoa criativa e com iniciativa própria, pronta para se envolver numa equipa dinâmica. O meu objetivo é contribuir para a melhoria contínua, a satisfação dos clientes e o aumento dos lucros da empresa.",
+        "title_experience" : "EXPERIÊNCIA PROFISSIONAL"
+      },
+    "experience": [
+      {
+        "title": "Full stack",
+        "entreprise": "Ha Couverture",
+        "location": "St Aignan de Grand Lieu",
+        "date_entrer": "Set. 2023",
+        "date_sortie": "Hoje",
+        "url":"https://buzz-ready.com",
+        "icon":"img/main/ha-couverture-icon.svg",
+        "iconPdf": "ha",
+        "icon_alt": "Logótipo Ha Couverture",
+        "description": "O meu trabalho na “Ha Couverture” consiste em criar um sítio Web de A a Z, trabalhar no seu SEO para maximizar a sua visibilidade online e otimizar a sua distribuição. Isto inclui a otimização das imagens, a integração com as redes sociais, bem como a referenciação nos motores de busca como o Google e o Bing. O meu objetivo é garantir que a sua presença digital seja eficaz e eficiente.",
+        "title_result": "Resultados",
+        "result": [
+          "Criação e implementação ;",
+          "Otimização de imagens e textos ;",
+          "Criação via APIs."
+        ]
+      },
+      {
+        "title": "Consultor - Analista de dados",
+        "entreprise": "GE Renewable Energy",
+        "location": "Montoir de bretagne",
+        "date_entrer": "Dez. 2021",
+        "date_sortie": "Jun. 2023",
+        "url":"https://www.ge.com/renewableenergy/wind-energy/offshore-wind",
+        "icon":"img/main/general_electric_icon.svg",
+        "iconPdf": "ge",
+        "icon_alt": "Logótipo General Electric",
+        "description": "Quando entrei para a General Electric, trabalhei no departamento de gestão de melhoria contínua de produtos. Criei pacotes de módulos de subcontratação e geri as relações com os parceiros. Também realizei análises unitárias com uma seleção das unidades dos projectos, utilizando ferramentas como o VBA. Em seguida, tracei todas as comparações utilizando transferências de todas as unidades e realizei a análise utilizando o VBA.",
+        "title_result": "Resultados",
+        "result": [
+          "Relações com os fornecedores num contexto internacional ;",
+          "Especialista em VBA e Office ;",
+          "Utilização do sistema PLM ;",
+          "Otimização de processos: 200 k€ / ano em benefícios."
+        ]
+      },
+      {
+        "title": "Engenheiro de métodos",
+        "entreprise": "Juignet",
+        "location": "Les Sorinières",
+        "date_entrer": "Jui. 2019",
+        "date_sortie": "Abr. 2021",
+        "url":"https://www.juignet.fr/",
+        "icon":"img/main/juignet-icon.svg",
+        "iconPdf": "juignet",
+        "icon_alt": "Logótipo Juignet",
+        "description": "Também trabalhei como formador de equipas e geri a implementação de um sistema ERP para a gestão de compras. Criei um planeamento automatizado em Excel, utilizando VBA, para melhorar a eficácia e a produtividade, e antecipei o recrutamento de equipas. Além disso, elaborei e implementei fichas de segurança para garantir o cumprimento das normas de segurança em vigor e programei máquinas para melhorar os processos de produção e otimizar o desempenho.",
+        "title_result": "Resultados",
+        "result": [
+          "Relações cliente / fornecedor ;",
+          "Gestão de equipas ;",
+          "Programador VBA (Office Windows) ;",
+          "Ficha de dados de segurança."]
+      },
+      {
+        "title": "Engenheiro de processos",
+        "entreprise": "Rabas",
+        "location": "Saint Nazaire",
+        "date_entrer": "Nov. 2016",
+        "date_sortie": "Jun. 2017",
+        "url":"http://www.rabas.fr/",
+        "icon":"img/main/rabas-icon.svg",
+        "iconPdf": "rabas",
+        "icon_alt": "Logótipo Rabas",
+        "description": "Como gestor e formador de equipas de melhoria, utilizei o método DINAMIC para otimizar a maquinação em massa e melhorar as mudanças de produção em 15 máquinas. Também criei linhas mais flexíveis, reduzindo os erros e aumentando a produção. Implementei add-ons ERP, como o Satelites Helios, para monitorizar as alterações de programação em tempo real e reduzir o stock global.",
+        "title_result": "Resultados",
+        "result": [
+          "Validação do diploma de Engenharia Geral ;",
+          "Gestão de equipas ;",
+          "Controlo dos resultados ;",
+          "Aquisição de utilizadores VBA ;",
+          "Otimização do processo: 120 k€ / ano em benefícios."
+        ]
+      },
+      {
+        "title": "Técnico de produção",
+        "entreprise": "Airbus",
+        "location": "Nantes",
+        "date_entrer": "Jul. 2011",
+        "date_sortie": "Out. 2016",
+        "url":"https://www.airbus.com/en/products-services/commercial-aircraft",
+        "icon":"img/main/airbus-icon.svg",
+        "iconPdf": "airbus",
+        "icon_alt": "Logótipo Airbus",
+        "description": "Experiência na montagem de secções centrais de asas para os programas A320, A330 e A350. Tarefas efectuadas: confeção dos painéis, montagem semi-automatizada na máquina, acabamento dos painéis e desmoldagem. Fui igualmente responsável pela substituição dos postos de trabalho nas linhas de produção de revestimento, desde o início das linhas até à entrega (de Nantes a St Nazaire), bem como pela gestão da logística dos componentes sem modificação para todos os programas.",
+        "title_result": "Resultados",
+        "result": [
+          "Trabalhar em equipas ;",
+          "Descobrir novas profissões."
+        ]
+      },
+      {
+        "title": "Técnico de aperfeiçoamento",
+        "entreprise": "Aérolia (ex-Airbus)",
+        "location": "Saint Nazaire",
+        "date_entrer": "Jan. 2009",
+        "date_sortie": "Jun. 2011",
+        "url":"https://www.airbus.com/fr/airbus-atlantic",
+        "icon":"img/main/airbus-icon.svg",
+        "icon_alt": "Logótipo Airbus para ilustrar a Aerolia",
+        "description": "Como técnico de melhoria contínua, desempenhei um papel na participação em reuniões LEAN e na melhoria das máquinas e da oficina utilizando métodos LEAN como o SMED (Single Minute Exchange of Die), TPM (Total Productive Maintenance) e 5S (Seiri/Eliminate, Seiton/Ranger, Seiso/Nettoyer, Seiketsu/Standardiser, Shitsuke/Respect). Fui também responsável pela gestão e coaching das acções LEAN ao longo do workshop. Planeei e implementei uma sala de melhoria que serviu de centro de execução para as oficinas de fabrico de perfis de alumínio. Graças a estas acções, conseguimos melhorar significativamente a qualidade da produção, reduzir os tempos de paragem e aumentar a produtividade da oficina. Além disso, fui responsável pelo acompanhamento dos principais indicadores de desempenho, bem como pela formação e desenvolvimento das equipas de produção.",
+        "title_result": "Resultados",
+        "result": [
+          "Gestão de equipas ;",
+          "Descobrir métodos de melhoria ;",
+          "Gestão de projectos."
+        ]
+      },
+      {
+        "title": "Técnico de fabrico",
+        "entreprise": "Airbus",
+        "location": "Saint Nazaire",
+        "date_entrer": "Abr. 2003",
+        "date_sortie": "Dez. 2008",
+        "url":"https://www.airbus.com/fr/airbus-atlantic",
+        "icon":"img/main/airbus-icon.svg",
+        "icon_alt": "Logótipo Airbus",
+        "description": "Como agente de fabrico de peças de alumínio, alumínio-lítio e titânio, trabalhei na produção de pequenas secções, com um máximo de 150 mm quadrados e comprimentos até 10 m. Trabalhei com o departamento de métodos para demonstrar novos processos de fabrico, e também orientei e formei os recém-chegados. Monitorizei de perto o desempenho do equipamento para garantir uma qualidade óptima das peças produzidas.",
+        "title_result": "Resultados",
+        "result": [
+          "Trabalhar em equipa ;",
+          "Aulas de reforço para os recém-chegados ;",
+          "Utilisation des nouveaux logiciels et pupitres."
+        ]
+      },
+      {
+        "title": "Ferramenteiro - Desenhador",
+        "entreprise": "SARL Chapuis",
+        "location": "Auxerre",
+        "date_entrer": "Out. 2001",
+        "date_sortie": "Mar. 2003",
+        "description": "Conceção, fabrico, montagem, entrega e ensaio de moldes de injeção de plástico nos sectores automóvel, aeroespacial, cosmético e outros. Trabalho a partir do esboço, corte, maquinagem tradicional (torneamento - fresagem), programação CNC, fresagem, perfuração, retificação, montagem e entrega com ensaios.",
+        "title_result": "Resultados",
+        "result": [
+          "Relações fornecedores / clientes ;",
+          "Aquisição rigorosa de moldes."
+        ]
+      },
+      {
+        "title": "Torneiro - Fresadora - Rectificadora - Ajustador",
+        "entreprise": "S.L.A.M",
+        "location": "Saint Brévins",
+        "date_entrer": "Set. 1996",
+        "date_sortie": "Set. 2001",
+        "description": "Fabrico de peças, ferramentas e máquinas especiais para os sectores aeronáutico, naval e outros sectores de subcontratação. Trabalho em tornos de 2 eixos com controlo tradicional e numérico. Trabalho em fresadoras de 3 a 5 eixos com controlo tradicional e numérico. Ajuste de peças no final do processo. Retificação de peças.",
+        "title_result": "Resultados",
+        "result": [
+          "Validação do Bac e do BEP Productique ;",
+          "Aprendizagem em profissões de maquinagem em diversos sectores."
+        ]
+      }
+    ]
+  },
+  "selection":{
+    "title": "Langages",
+    "options" : [
+      { "label": "Français",
+        "value": "fr",
+        "valueFlag": "FR",
+        "flag": "img/aside/langues/france-icon.svg",
+        "flag_alt": "Drapeau de la France",
+        "iconName":"faChevronDown"
+      },
+      { 
+        "label": "English",
+        "value": "en",
+        "valueFlag": "GB",
+        "flag": "img/aside/langues/uk-icon.svg",
+        "flag_alt": "Drapeau du Royaume-Uni",
+        "iconName":"faChevronDown"
+      }
+    ]
+  },
+  "footer":{
+    "title": "E-MAIL DE CONTACTO A :",
+    "iconLeft": {"prefix" : "fas", "iconName": "faEnvelopeOpen"},
+    "iconLeftAlt": "Reescrita de e-mail para david launay",
+    "iconRight": {"prefix" : "fas", "iconName": "faPaperPlane"},
+    "iconRightAlt": "Enviar um email para david launay",
+    "placeholder": "O seu email"
+  },
+
+    
+  "formulaire":{
+    "title": "Obrigatório se *",
+    "site": "Sítio Web",
+    "name": "Nome *",
+    "surname": "Nome próprio *",
+    "email": "Email",
+    "phone": "N° de telefone",
+    "comments": "Comentário",
+    "commentPlaceholder": "Por favor, deixe um comentário!",
+    "submit": "Enviar",
+    "thank": "Recebemos a sua mensagem eletrónica e responderemos o mais rapidamente possível.",
+    "message": {
+      "email": {
+        "required": "Este campo é obrigatório",
+        "email":"O email deve corresponder "
+      },
+      "phone": {
+        "number": "Devem ser números"
+      },
+      "site": {
+        "url": "Url tem de ser, pelo menos, 'https://' ou 'http://'."
+      },
+      "generic": {
+        "else": "Problemas de código do servidor",
+        "catch": "Problemas no servidor"
+      }
+    }
+    
+
+
+  }
+}

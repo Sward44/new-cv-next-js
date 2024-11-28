@@ -1,7 +1,7 @@
 import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 
-export const availableLocales = ["en", "fr"];
+export const availableLocales = ["en", "fr", "pt"];
 export const defaultLocale = "fr";
 
 export const getPreferredLocale = (request) => {
