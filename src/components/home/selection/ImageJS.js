@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const ImageJS = ({ image, index }) => {
+  
   return (
     <Image
       index={index}

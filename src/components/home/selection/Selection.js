@@ -16,6 +16,7 @@ const Selection = ({ selection }) => {
   }, [currentLanguage]);
 
   return (
+
     <div className={styles.selection}>
       <h2 className={styles.titleSmall}>{selection.title}</h2>
       <div
@@ -65,4 +66,4 @@ const Selection = ({ selection }) => {
 };
 
 export default Selection;
-// ${styles.displayBlock}
+
