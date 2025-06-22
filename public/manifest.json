@@ -1,9 +1,9 @@
 {
-  "short_name": "My Curriculum Vitae",
-  "name": "David Launay - My Curriculum Vitae - Entrepreneur or Employee",
-  "description": "With 20 years' experience, I have moved into data analysis and search engine optimisation. My technical expertise and strategic vision enhance my ability to optimise online visibility, demonstrating my adaptability and passion for digital.",
+  "short_name": "Mon Curriculum Vitae",
+  "name": "David Launay - Mon Curriculum Vitae - Entrepreneur ou Salarié",
+  "description": "Fort de 20 ans d'expérience, j'ai évolué vers l'analyse de données et le référencement moteur de recherche. Mon expertise technique et ma vision stratégique renforcent ma capacité à optimiser la visibilité en ligne, démontrant une adaptabilité et une passion pour le digital.",
   "prefer_related_applications": false,
-  "lang": "en",
+  "lang": "fr",
   "author": "David Launay",
   "manifestVersion": 4,
   "icons": [
