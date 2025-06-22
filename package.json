@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3020",
-    "build": "cross-env NODE_OPTIONS='--max-old-space-size=2048' next build",
+    "build": "cross-env NODE_OPTIONS='--max-old-space-size=4096' next build",
     "start": "NODE_ENV=production node server.js",
     "lint": "next lint",
-    "build:incremental": "cross-env NODE_OPTIONS='--max-old-space-size=2048' next build --profile"
+    "build:incremental": "cross-env NODE_OPTIONS='--max-old-space-size=4096' next build --profile"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.2",
