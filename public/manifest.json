@@ -1,54 +1,38 @@
 {
-  "short_name": "MyCV",
-  "name": "David Launay - My Curriculum Vitae",
+  "short_name": "Mon Curriculum Vitae",
+  "name": "David Launay - Mon Curriculum Vitae - Entrepreneur ou Salarié",
+  "description": "Fort de 20 ans d'expérience, j'ai évolué vers l'analyse de données et le référencement moteur de recherche. Mon expertise technique et ma vision stratégique renforcent ma capacité à optimiser la visibilité en ligne, démontrant une adaptabilité et une passion pour le digital.",
+  "prefer_related_applications": false,
+  "lang": "fr",
+  "author": "David Launay",
+  "manifestVersion": 4,
   "icons": [
     {
+      "src": "favicon.ico",
       "rel": "shortcut icon",
       "type": "image/x-icon",
       "sizes": "32x32",
-      "href": "/favicon.ico",
       "alt": "favion curriculum vitae"
     },
     {
-      "rel": "icon",
-      "type": "image/png",
-      "sizes": "16x16",
-      "href": "/favicon-16x16.png",
-      "alt": "favion curriculum vitae"
-    },
-    {
-      "rel": "icon",
-      "type": "image/png",
-      "sizes": "32x32",
-      "href": "/favicon-32x32.png",
-      "alt": "favion curriculum vitae"
-    },
-    {
+      "src": "android-chrome-icon-192x192.png",
       "rel": "icon",
       "type": "image/png",
       "sizes": "192x192",
-      "href": "/android-chrome-icon-192x192.png",
       "alt": "favion curriculum vitae"
     },
     {
+      "src": "android-chrome-icon-512x512.png",
       "rel": "icon",
       "type": "image/png",
       "sizes": "512x512",
-      "href": "/android-chrome-icon-512x512.png",
       "alt": "favion curriculum vitae"
     },
     {
-      "rel": "apple-touch-icon",
-      "type": "image/png",
-      "sizes": "180x180",
-      "href": "/apple-touch-icon-180x180.png",
-      "alt": "favion curriculum vitae"
-    },
-    {
+      "src": "david-launay-icon.svg",
       "rel": "icon",
       "type": "image/svg+xml",
       "sizes": "any",
-      "href": "/david-launay-icon.svg",
       "alt": "favion curriculum vitae"
     },
     {
@@ -58,7 +42,19 @@
       "alt": "David Launay|Entrepreneur|Mon cv pour les réseaux sociaux"
     }
   ],
-  "start_url": ".",
+  "categories": [
+    "business",
+    "design",
+    "developer",
+    "developer tools",
+    "development",
+    "education",
+    "graphics",
+    "graphics & design",
+    "network",
+    "productivity"
+  ],
+  "start_url": "http://localhost:3000",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

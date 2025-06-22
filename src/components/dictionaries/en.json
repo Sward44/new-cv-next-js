@@ -1,287 +1,268 @@
 {
-  "document":
-    {
-      "title": "David Launay - Businessman",
-      "description": "With 20 years' experience, I have moved into data analysis and search engine optimisation. My technical expertise and strategic vision enhance my ability to optimise online visibility, demonstrating my adaptability and passion for digital.",
-      "manifest": "/manifest.json"
-    },
-  "header":
-    {
-      "title": "Full-stack & Designer"
-    },
-  "aside":
-    {
-      "section": [
-        "CONTACT",
-        "EDUCATION",
-        "SKILLS",
-        "LANGUAGES",
-        "HOBBIES"
-      ],
-      "contact":[
-        {
-          "title": "Phone :",
-          "title_hover": "Click here to call",
-          "icon": {"prefix" : "fas", "iconName": "faPhone"},
-          "icon_alt": "Phone to david launay",
-          "description": "+33 (0)6 36 94 69 70",
-          "url": "telto:+33636946970"
-        },
-        {
-          "title": "Email :",
-          "title_hover": "Click here to send an email",
-          "icon": {"prefix" : "fas", "iconName": "faEnvelope"},
-          "icon_alt": "Send email to david launay",
-          "description": "davidlaunay567@gmail.com",
-          "url": "mailto:davidlaunay567@gmail.com"
-        },
-        {
-          "title": "Adress :",
-          "title_hover": "Click here to discover the sector",
-          "icon": {"prefix" : "fas", "iconName": "faLocationDot"},
-          "icon_alt": "Address of david launay",
-          "description": "Le Pellerin, France",
-          "url": "https://goo.gl/maps/67yWc4vdLkcJh1op7"
-        },
-        {
-          "title": "Social:",
-          "title_hover": "Click here to go to LinkedIn",
-          "icon": {"prefix" : "fab", "iconName": "faLinkedin"},
-          "icon_alt": "david launay's public profile on Linkedin",
-          "description": "@david-launay",
-          "url": "https://www.linkedin.com/in/david-launay-178576b1/"
-        },
-        {
-          "title": "Developpement:",
-          "title_hover": "Click here to go to GitHub",
-          "icon": {"prefix" : "fab", "iconName": "faSquareGithub"},
-          "icon_alt": "david launay's public profile on GitHub",
-          "description": "Sward44",
-          "url": "https://github.com/Sward44"
-        }
-       ],
-      "education":[
-        {
-          "title": "DYMA - On line",
-          "description": [
-            "Full Stack"
-          ],
-          "icon": "img/aside/education/dyma-icon.svg",
-          "url": "https://dyma.fr/",
-          "icon_alt": "Dyma - Website development training.",
-          "img": "img/aside/education/dyma-html.webp"
-        },
-        {
-          "title": "Mindeo - En ligne",
-          "description": [
-            "E-commerce - Mindset - AI"
-          ],
-          "icon": "img/aside/education/mindeo-icon.svg",
-          "url": "https://www.mindeo.com/",
-          "icon_alt": "Mindeo - Full e-commerce site training.",
-          "img": "img/aside/education/mindeo-html.webp"
-        },
-        {
-          "title": "WSE - Nantes",
-          "description": [
-              "English"
-            ],
-          "icon": "img/aside/education/wse-icon.svg",
-          "url": "https://www.wallstreetenglish.fr/",
-          "icon_alt": "Wall Street English - English language training course.",
-          "img": "img/aside/education/wse-html.webp"
-        },
-        {
-          "title": "BEA - Manchester",
-          "description": [
-            "English"
-          ],
-          "icon": "img/aside/education/bea-icon.svg",
-          "url": "https://www.britannia-school.com/",
-          "icon_alt": "British English Academy - English language training course.",
-          "img": "img/aside/education/bea-html.webp"
-        },
-        {
-          "title": "CESI - St Nazaire",
-          "description": [
-            "Generalist engineer - Continous improvement"
-          ],
-          "icon": "img/aside/education/cesi-icon.svg",
-          "url": "https://www.cesi.fr/programmes/cycle-preparatoire-integre/?gclid=Cj0KCQjw166aBhDEARIsAMEyZh68XSXVR53vFy_bbvWPGmf0P1un3MW-YcVlMd0bvZs95-7ZLZvnuxoaAkUXEALw_wcB",
-          "icon_alt": "CESI - Training as a general engineer specialising in continuous improvement.",
-          "img": "img/aside/education/cesi-html.webp"
-        },
-        {
-          "title": "AFPI - Nantes",
-          "description": [
-            "BEP & Bac - Mechanical production"
-          ],
-          "icon": "img/aside/education/afpi-icon.svg",
-          "url": "https://www.afpi-acmformation.com/",
-          "icon_alt": "AFPI - Mechanical production training Bac and BEP.",
-          "img": "img/aside/education/afpi-html.webp"
-        }
-      ],
-      "computing":[
-        {
-          "title": "Web development",
-          "score": ["html", "htmlDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/html-css-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5dab7f032482b13eb493df12",
-              "icon_alt": "Language used in browsers: HTML-CSS-JS."
-            },
-            {
-              "icon": "img/aside/informatique/sass-icon.svg",
-              "url": "https://sass-lang.com/",
-              "icon_alt": "Compiling CSS after writing SCSS."
-            }
-          ]
-          
-        },
-        {
-          "title": "Data analysis",
-          "score": ["js", "jsDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/js-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
-              "icon_alt": "Language used to animate in browsers and send data to the server: JS."
-            },
-            {
-              "icon": "img/aside/informatique/react-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/628e08287436c6ee0c1480b9",
-              "icon_alt": "React is a language used to create, compile and minify modern designs: JS(X), TS(X)."
-            },
-            {
-              "icon": "img/aside/informatique/next-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/64157e14383e2a02a5c7e82c",
-              "icon_alt": "Next is a language used to compile server-side html, css, javascipt as an overlay to React."
-            },
-            {
-              "icon": "img/aside/informatique/linux-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5f39a9aa3298c65e1adc38a6",
-              "icon_alt": "Linux-based platform with similar definitions between Linux-OS."
-            }
-          ]
-        },
-        {
-          "title": "Design",
-          "score": ["windows", "windowsDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/windows-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
-              "icon_alt": "Windows-based platform."
-            },
-            {
-              "icon": "img/aside/informatique/office-icon.svg",
-              "url": "https://www.office.com/",
-              "icon_alt": "Office is the Windows office software suite."
-            },
-            {
-              "icon": "img/aside/informatique/vb-icon.svg",
-              "url": "https://learn.microsoft.com/en-us/dotnet/visual-basic/",
-              "icon_alt": "Visual Basic to program all applications with a compiled language and VBA to create programs for Office applications."
-            }
-          ] 
-        },
-        {
-          "title": "CopyWritting",
-          "score": ["erp", "erpDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/aras-icon.svg",
-              "url": "https://www.aras.com/fr-fr",
-              "icon_alt": "Product Life Management is the definition of PLM, of which Aras is an Oracle-sourced platform."
-            },
-            {
-              "icon": "img/aside/informatique/catia-icon.svg",
-              "url": "https://www.3ds.com/products/catia",
-              "icon_alt": "Product Life Management is the definition of PLM, of which Enovia is a platform from Dassault Systèmes."
-            },
-            {
-              "icon": "img/aside/informatique/sap-icon.svg",
-              "url": "https://www.sap.com/france/index.html?url_id=auto_hp_redirect_france",
-              "icon_alt": "Enterprise Resource Planning is the definition of the SAP platform used in industries such as aeronautics."
-            }
-          ] 
-        }
-      ],
-      "langue":[
-        {
-          "starCount":5,
-          "icon_alt": "French language level",
-          "flag": "img/aside/langues/france-icon.svg",
-          "flag_alt": "French flag"
-        },
-        {
-          "starCount":3,
-          "icon_alt": "English language level",
-          "flag": "img/aside/langues/uk-icon.svg",
-          "flag_alt": "United Kingdom flag"
-        }
-      ],
-      "hobbies":[
-        {
-          "icon": "img/aside/hobbies/around.svg",
-          "icon_alt": "Around the world"
-        },
-        {
-          "icon": "img/aside/hobbies/computer.svg",
-          "icon_alt": "Enjoys programming"
-        },
-        {
-          "icon": "img/aside/hobbies/traveler.svg",
-          "icon_alt": "Love walking"
-        },
-        {
-          "icon": "img/aside/hobbies/fishing.svg",
-          "icon_alt": "Likes to fish"
-        },
-        {
-          "icon": "img/aside/hobbies/hunting.svg",
-          "icon_alt": "Likes hunting with a bow"
-        }
-      ]
-    },
-  "selection":{
+  "document": {
+    "title": "David Launay - Businessman",
+    "description": "With 20 years' experience, I have moved into data analysis and search engine optimisation. My technical expertise and strategic vision enhance my ability to optimise online visibility, demonstrating my adaptability and passion for digital.",
+    "short_name": "My Curriculum Vitae",
+    "name": "David Launay - My Curriculum Vitae - Entrepreneur or Employee",
+    "manifest_description": "With 20 years' experience, I have moved into data analysis and search engine optimisation. My technical expertise and strategic vision enhance my ability to optimise online visibility, demonstrating my adaptability and passion for digital.",
+    "lang": "en"
+  },
+  "header": {
+    "title": "Full-stack & Designer"
+  },
+  "aside": {
+    "section": ["CONTACT", "EDUCATION", "SKILLS", "LANGUAGES", "HOBBIES"],
+    "contact": [
+      {
+        "title": "Phone :",
+        "title_hover": "Click here to call",
+        "icon": { "prefix": "fas", "iconName": "faPhone" },
+        "icon_alt": "Phone to david launay",
+        "description": "+33 (0)7 68 50 79 04",
+        "url": "tel:+33768507904"
+      },
+      {
+        "title": "Email :",
+        "title_hover": "Click here to send an email",
+        "icon": { "prefix": "fas", "iconName": "faEnvelope" },
+        "icon_alt": "Send email to david launay",
+        "description": "davidlaunay567@gmail.com",
+        "url": "mailto:davidlaunay567@gmail.com"
+      },
+      {
+        "title": "Adress :",
+        "title_hover": "Click here to discover the sector",
+        "icon": { "prefix": "fas", "iconName": "faLocationDot" },
+        "icon_alt": "Address of david launay",
+        "description": "Le Pellerin, France",
+        "url": "https://goo.gl/maps/67yWc4vdLkcJh1op7"
+      },
+      {
+        "title": "Social:",
+        "title_hover": "Click here to go to LinkedIn",
+        "icon": { "prefix": "fab", "iconName": "faLinkedin" },
+        "icon_alt": "david launay's public profile on Linkedin",
+        "description": "@david-launay",
+        "url": "https://www.linkedin.com/in/david-launay-178576b1/"
+      },
+      {
+        "title": "Developpement:",
+        "title_hover": "Click here to go to GitHub",
+        "icon": { "prefix": "fab", "iconName": "faSquareGithub" },
+        "icon_alt": "david launay's public profile on GitHub",
+        "description": "Sward44",
+        "url": "https://github.com/Sward44"
+      }
+    ],
+    "education": [
+      {
+        "title": "DYMA - On line",
+        "description": ["Full Stack"],
+        "icon": "img/aside/education/dyma-icon.svg",
+        "url": "https://dyma.fr/",
+        "icon_alt": "Dyma - Website development training.",
+        "img": "img/aside/education/dyma-html.webp"
+      },
+      {
+        "title": "Mindeo - En ligne",
+        "description": ["E-commerce - Mindset - AI"],
+        "icon": "img/aside/education/mindeo-icon.svg",
+        "url": "https://www.mindeo.com/",
+        "icon_alt": "Mindeo - Full e-commerce site training.",
+        "img": "img/aside/education/mindeo-html.webp"
+      },
+      {
+        "title": "WSE - Nantes",
+        "description": ["English"],
+        "icon": "img/aside/education/wse-icon.svg",
+        "url": "https://www.wallstreetenglish.fr/",
+        "icon_alt": "Wall Street English - English language training course.",
+        "img": "img/aside/education/wse-html.webp"
+      },
+      {
+        "title": "BEA - Manchester",
+        "description": ["English"],
+        "icon": "img/aside/education/bea-icon.svg",
+        "url": "https://www.britannia-school.com/",
+        "icon_alt": "British English Academy - English language training course.",
+        "img": "img/aside/education/bea-html.webp"
+      },
+      {
+        "title": "CESI - St Nazaire",
+        "description": ["Generalist engineer - Continous improvement"],
+        "icon": "img/aside/education/cesi-icon.svg",
+        "url": "https://www.cesi.fr/programmes/cycle-preparatoire-integre/?gclid=Cj0KCQjw166aBhDEARIsAMEyZh68XSXVR53vFy_bbvWPGmf0P1un3MW-YcVlMd0bvZs95-7ZLZvnuxoaAkUXEALw_wcB",
+        "icon_alt": "CESI - Training as a general engineer specialising in continuous improvement.",
+        "img": "img/aside/education/cesi-html.webp"
+      },
+      {
+        "title": "AFPI - Nantes",
+        "description": ["BEP & Bac - Mechanical production"],
+        "icon": "img/aside/education/afpi-icon.svg",
+        "url": "https://www.afpi-acmformation.com/",
+        "icon_alt": "AFPI - Mechanical production training Bac and BEP.",
+        "img": "img/aside/education/afpi-html.webp"
+      }
+    ],
+    "computing": [
+      {
+        "title": "Web development",
+        "score": ["html", "htmlDot"],
+        "icons": [
+          {
+            "icon": "img/aside/informatique/html-css-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5dab7f032482b13eb493df12",
+            "icon_alt": "Language used in browsers: HTML-CSS-JS."
+          },
+          {
+            "icon": "img/aside/informatique/sass-icon.svg",
+            "url": "https://sass-lang.com/",
+            "icon_alt": "Compiling CSS after writing SCSS."
+          }
+        ]
+      },
+      {
+        "title": "Data analysis",
+        "score": ["js", "jsDot"],
+        "icons": [
+          {
+            "icon": "img/aside/informatique/js-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
+            "icon_alt": "Language used to animate in browsers and send data to the server: JS."
+          },
+          {
+            "icon": "img/aside/informatique/react-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/628e08287436c6ee0c1480b9",
+            "icon_alt": "React is a language used to create, compile and minify modern designs: JS(X), TS(X)."
+          },
+          {
+            "icon": "img/aside/informatique/next-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/64157e14383e2a02a5c7e82c",
+            "icon_alt": "Next is a language used to compile server-side html, css, javascipt as an overlay to React."
+          },
+          {
+            "icon": "img/aside/informatique/linux-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5f39a9aa3298c65e1adc38a6",
+            "icon_alt": "Linux-based platform with similar definitions between Linux-OS."
+          }
+        ]
+      },
+      {
+        "title": "Design",
+        "score": ["windows", "windowsDot"],
+        "icons": [
+          {
+            "icon": "img/aside/informatique/windows-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
+            "icon_alt": "Windows-based platform."
+          },
+          {
+            "icon": "img/aside/informatique/office-icon.svg",
+            "url": "https://www.office.com/",
+            "icon_alt": "Office is the Windows office software suite."
+          },
+          {
+            "icon": "img/aside/informatique/vb-icon.svg",
+            "url": "https://learn.microsoft.com/en-us/dotnet/visual-basic/",
+            "icon_alt": "Visual Basic to program all applications with a compiled language and VBA to create programs for Office applications."
+          }
+        ]
+      },
+      {
+        "title": "CopyWritting",
+        "score": ["erp", "erpDot"],
+        "icons": [
+          {
+            "icon": "img/aside/informatique/aras-icon.svg",
+            "url": "https://www.aras.com/fr-fr",
+            "icon_alt": "Product Life Management is the definition of PLM, of which Aras is an Oracle-sourced platform."
+          },
+          {
+            "icon": "img/aside/informatique/catia-icon.svg",
+            "url": "https://www.3ds.com/products/catia",
+            "icon_alt": "Product Life Management is the definition of PLM, of which Enovia is a platform from Dassault Systèmes."
+          },
+          {
+            "icon": "img/aside/informatique/sap-icon.svg",
+            "url": "https://www.sap.com/france/index.html?url_id=auto_hp_redirect_france",
+            "icon_alt": "Enterprise Resource Planning is the definition of the SAP platform used in industries such as aeronautics."
+          }
+        ]
+      }
+    ],
+    "langue": [
+      {
+        "starCount": 5,
+        "icon_alt": "French language level",
+        "flag": "img/aside/langues/france-icon.svg",
+        "flag_alt": "French flag"
+      },
+      {
+        "starCount": 3,
+        "icon_alt": "English language level",
+        "flag": "img/aside/langues/uk-icon.svg",
+        "flag_alt": "United Kingdom flag"
+      }
+    ],
+    "hobbies": [
+      {
+        "icon": "img/aside/hobbies/around.svg",
+        "icon_alt": "Around the world"
+      },
+      {
+        "icon": "img/aside/hobbies/computer.svg",
+        "icon_alt": "Enjoys programming"
+      },
+      {
+        "icon": "img/aside/hobbies/traveler.svg",
+        "icon_alt": "Love walking"
+      },
+      {
+        "icon": "img/aside/hobbies/fishing.svg",
+        "icon_alt": "Likes to fish"
+      },
+      {
+        "icon": "img/aside/hobbies/hunting.svg",
+        "icon_alt": "Likes hunting with a bow"
+      }
+    ]
+  },
+  "selection": {
     "title": "Languages",
-    "options" : [
-      { "label": "Français",
+    "options": [
+      {
+        "label": "Français",
         "value": "fr",
         "valueFlag": "FR",
         "flag": "img/aside/langues/france-icon.svg",
-        "flag_alt" :"French flag",
-        "iconName":"faChevronDown"
+        "flag_alt": "French flag",
+        "iconName": "faChevronDown"
       },
-      { 
+      {
         "label": "English",
         "value": "en",
         "valueFlag": "GB",
         "flag": "img/aside/langues/uk-icon.svg",
-        "flag_alt" :"United Kingdom flag",
-        "iconName":"faChevronDown"
+        "flag_alt": "United Kingdom flag",
+        "iconName": "faChevronDown"
       }
     ]
   },
-  "main":{
-    "profil":
-      {
-        "title_profil": "CAREER PROFILE",
-        "description": "Full-stack developer with over 2 years' experience, specialising in Next.js, React, and MongoDB, with solid telecommuting and freelance expertise. With experience in cross-functional project management and data analysis in the aerospace industry, I'm a creative, self-starter who's ready to get involved in a dynamic team. My aim is to contribute tocontinuous improvement, customer satisfaction andincreased profits for the company.",
-        "title_experience" : "WORK EXPERIENCE"
-      },
-    "experience":[
+  "main": {
+    "profil": {
+      "title_profil": "CAREER PROFILE",
+      "description": "Full-stack developer with over 2 years' experience, specialising in Next.js, React, and MongoDB, with solid telecommuting and freelance expertise. With experience in cross-functional project management and data analysis in the aerospace industry, I'm a creative, self-starter who's ready to get involved in a dynamic team. My aim is to contribute tocontinuous improvement, customer satisfaction andincreased profits for the company.",
+      "title_experience": "WORK EXPERIENCE"
+    },
+    "experience": [
       {
         "title": "Full stack",
         "entreprise": "Ha Couverture",
         "location": "St Aignan de Grand Lieu",
         "date_entrer": "Sep. 2023",
         "date_sortie": "Aujourd'hui",
-        "url":"https://buzz-ready.com",
-        "icon":"img/main/ha-couverture-icon.svg",
+        "url": "https://buzz-ready.com",
+        "icon": "img/main/ha-couverture-icon.svg",
         "iconPdf": "ha",
         "icon_alt": "Logo Ha Couverture",
         "description": "My job at Ha Couverture is to create a website from scratch, work on its SEO to maximise online visibility, and optimise its distribution. This includes image optimisation, integration with social media and indexing on search engines such as Google and Bing. My aim is to ensure an effective and efficient digital presence.",
@@ -293,172 +274,168 @@
         ]
       },
       {
-          "title": "Consultant - Data analyst",
-          "entreprise": "GE Renewable Energy",
-          "location": "Montoir de bretagne",
-          "date_entrer": "Dec. 2021",
-          "date_sortie": "Jun. 2023",
-          "url":"https://www.ge.com/renewableenergy/wind-energy/offshore-wind",
-          "icon":"img/main/general_electric_icon.svg",
-          "icon_alt": "Logo General Electric",
-          "description": "Recruited by General Electric, I worked in the continuous product improvement management department. I created subcontract module packages and managed relationships with partners. I also carried out unit analysis with a selection of the units in the projects, using tools such as VBA. I then plotted all the comparisons using downloads of all the units and carried out the analysis using VBA.",
-          "title_result": "Results",
-          "result": [
-            "Supplier relations in an international context ;",
-            "Expert with VBA and Office ;",
-            "Using the PLM system ;",
-            "Process optimisation: 200 k€ / year in benefits."
-          ]
-        },
-        {
-          "title": "Methods engineer",
-          "entreprise": "Juignet",
-          "location": "Les Sorinières",
-          "date_entrer": "Jul. 2019",
-          "date_sortie": "Apr. 2021",
-          "url":"https://www.juignet.fr/",
-          "icon":"img/main/juignet-icon.svg",
-          "icon_alt": "Logo Juignet",
-          "description": "I've also worked as a coach for teams and managed the implementation of an ERP system for purchasing management. I set up automated planning in Excel using VBA to improve efficiency and productivity, and anticipated team recruitment. In addition, I drafted and deployed safety sheets to ensure compliance with current safety standards and programmed machines to improve production processes and optimise performance.",
-          "title_result": "Results",
-          "result": [
-            "Customer/supplier relations ;",
-            "Team management ;",
-            "Intermediate VBA ;",
-            "Drafting safety data sheets."
-          ]
-        },
-        {
-          "title": "Process engineer",
-          "entreprise": "Rabas",
-          "location": "Saint Nazaire",
-          "date_entrer": "Nov. 2016",
-          "date_sortie": "Jun. 2017",
-          "url":"http://www.rabas.fr/",
-          "icon":"img/main/rabas-icon.svg",
-          "icon_alt": "Logo Rabas",
-          "description": "As an improvement team manager and coach, I used the DINAMIC method to optimise mass machining and improve production changeovers on 15 machines. I also created more flexible lines, reducing errors and increasing production. I deployed ERP add-ons such as Satelites Helios to monitor schedule changes in real time and reduce overall stock.",
-          "title_result": "Results",
-          "result": [
-            "Validation of the Generalist Engineering diploma ;",
-            "Team management ;Profit monitoring ;",
-            "Acquisition of VBA use;",
-            "Process optimisation: 120 k€ / year in benefits."
-          ]
-        },
-        {
-          "title": "Production technician",
-          "entreprise": "Airbus",
-          "location": "Nantes",
-          "date_entrer": "Jul. 2011",
-          "date_sortie": "Oct. 2016",
-          "url":"https://www.airbus.com/en/products-services/commercial-aircraft",
-          "icon":"img/main/airbus-icon.svg",
-          "icon_alt": "Logo Airbus",
-          "description": "Experience in assembling wing centre sections for the A320, A330 and A350 programmes. Tasks carried out: making up the panels, semi-automated assembly on the machine, finishing the panels and demoulding. I was also responsible for replacing workstations on the casing production lines, from the start of the lines to delivery (from Nantes to St Nazaire), as well as managing the logistics of components requiring no modification for all programmes.",
-          "title_result": "Results",
-          "result": [
-            "Working in teams;",
-            "Discovering new professions."
-          ]
-        },
-        {
-          "title": "Improvement technician",
-          "entreprise": "Aérolia (ex-Airbus)",
-          "location": "Saint Nazaire",
-          "date_entrer": "Jan. 2009",
-          "date_sortie": "Jun. 2011",
-          "url":"https://www.airbus.com/en/airbus-atlantic",
-          "icon":"img/main/airbus-icon.svg",
-          "icon_alt": "Airbus logo to illustrate Aerolia",
-          "description": "As a continuous improvement technician, I played a role in participating in LEAN meetings and improving machines and the workshop using LEAN methods such as SMED (Single Minute Exchange of Die), TPM (Total Productive Maintenance) and 5S (Seiri/Sort, Seiton/Straighten, Seiso/Shine, Seiketsu/Standardize, Shitsuke/Sustain). I was also responsible for managing and coaching LEAN actions throughout the workshop. I planned and implemented an improvement room serving as an execution centre for the aluminium profile manufacturing workshops. Thanks to these actions, we were able to significantly improve production quality, reduce downtime and increase the workshop's productivity. In addition, I was in charge of monitoring key performance indicators, as well as training and developing the production teams.",
-          "title_result": "Results",
-          "result": [
-            "Team management ;",
-            "Discovering improvement methods ;",
-            "Project management."
-          ]
-        },
-        {
-          "title": "Manufacturing technician",
-          "entreprise": "Airbus",
-          "location": "Saint Nazaire",
-          "date_entrer": "Apr. 2003",
-          "date_sortie": "Dec. 2008",
-          "url":"https://www.airbus.com/en/airbus-atlantic",
-          "icon":"img/main/airbus-icon.svg",
-          "icon_alt": "Airbus logo",
-          "description": "As a manufacturing agent for aluminium, aluminium-lithium and titanium parts, I worked on the production of small sections, maximum 150 mm squared in lengths of up to 10 m. I worked with the methods department to demonstrate new manufacturing processes, and I also coached and trained new arrivals. I closely monitored the performance of the equipment to ensure optimum quality of the parts produced.",
-          "title_result": "Results",
-          "result": [
-            "Teamwork ;",
-            "Tutoring for new arrivals;",
-            "Use of new software and desks."
-          ]
-        },
-        {
-          "title": "Toolmaker - Draughtsman",
-          "entreprise": "SARL Chapuis",
-          "location": "Auxerre",
-          "date_entrer": "Oct. 2001",
-          "date_sortie": "Mar. 2003",
-          "description": "Design, manufacture, assembly, delivery and testing of plastic injection moulds in the automotive, aerospace, cosmetics and other sectors. Working from the drawing board, cutting, traditional machining (turning - milling), CNC programming, milling, drilling, grinding, assembly and delivery with testing.",
-          "title_result": "Results",
-          "result": [
-            "Supplier / customer relations ;",
-            "Acquiring rigour in the mould."
-          ]
-        },
-        {
-          "title": "Turner - Milling machine - Grinder - Adjuster",
-          "entreprise": "S.L.A.M",
-          "location": "Saint Brévins",
-          "date_entrer": "Sep. 1996",
-          "date_sortie": "Sep. 2001",
-          "description": "Manufacture of parts, tools and special machines for aeronautical, naval and other subcontracting sectors. Work on conventional and numerically controlled 2-axis lathes. Work on 3-axis to 5-axis milling machines with traditional and numerical control. Adjustment of parts at the end of the process. Rectification of parts.",
-          "title_result": "Results",
-          "result": [
-            "Validation of the Bac and BEP Productique;",
-            "Apprenticeship in machining trades in various sectors."
-          ]
-        }
-    ]
-  },   
-  "footer":{
-      "title": "EMAIL CONTACT AT",
-      "iconLeft": {"prefix" : "fas", "iconName": "faEnvelopeOpen"},
-      "iconLeftAlt": "Email copywriting for david launay",
-      "iconRight": {"prefix" : "fas", "iconName": "faPaperPlane"},
-      "iconRightAlt": "Send email to david launay",
-      "placeholder": "Your e-mail"
-    },
-  "formulaire":{
-      "title": "Required if *",
-      "site": "Website",
-      "name": "Last Name *",
-      "surname": "First Name *",
-      "email": "E-mail",
-      "phone": "Phone",
-      "comments": "Comments",
-      "commentPlaceholder": "Thank you for leaving a comment !",
-      "submit": "Submit",
-      "thank": "We have received your email and will reply as soon as possible.",
-      "message": {
-        "email": {
-          "required": "This field is required",
-          "email":"The email must match"
-        },
-        "phone": {
-          "number": "Must be numbers"
-        },
-        "site": {
-          "url": "Url must be at least 'https://' or 'http://'"
-        },
-        "generic": {
-          "else": "Server code issues",
-          "catch": "Server issues"
-        }
+        "title": "Consultant - Data analyst",
+        "entreprise": "GE Renewable Energy",
+        "location": "Montoir de bretagne",
+        "date_entrer": "Dec. 2021",
+        "date_sortie": "Jun. 2023",
+        "url": "https://www.ge.com/renewableenergy/wind-energy/offshore-wind",
+        "icon": "img/main/general_electric_icon.svg",
+        "icon_alt": "Logo General Electric",
+        "description": "Recruited by General Electric, I worked in the continuous product improvement management department. I created subcontract module packages and managed relationships with partners. I also carried out unit analysis with a selection of the units in the projects, using tools such as VBA. I then plotted all the comparisons using downloads of all the units and carried out the analysis using VBA.",
+        "title_result": "Results",
+        "result": [
+          "Supplier relations in an international context ;",
+          "Expert with VBA and Office ;",
+          "Using the PLM system ;",
+          "Process optimisation: 200 k€ / year in benefits."
+        ]
+      },
+      {
+        "title": "Methods engineer",
+        "entreprise": "Juignet",
+        "location": "Les Sorinières",
+        "date_entrer": "Jul. 2019",
+        "date_sortie": "Apr. 2021",
+        "url": "https://www.juignet.fr/",
+        "icon": "img/main/juignet-icon.svg",
+        "icon_alt": "Logo Juignet",
+        "description": "I've also worked as a coach for teams and managed the implementation of an ERP system for purchasing management. I set up automated planning in Excel using VBA to improve efficiency and productivity, and anticipated team recruitment. In addition, I drafted and deployed safety sheets to ensure compliance with current safety standards and programmed machines to improve production processes and optimise performance.",
+        "title_result": "Results",
+        "result": [
+          "Customer/supplier relations ;",
+          "Team management ;",
+          "Intermediate VBA ;",
+          "Drafting safety data sheets."
+        ]
+      },
+      {
+        "title": "Process engineer",
+        "entreprise": "Rabas",
+        "location": "Saint Nazaire",
+        "date_entrer": "Nov. 2016",
+        "date_sortie": "Jun. 2017",
+        "url": "http://www.rabas.fr/",
+        "icon": "img/main/rabas-icon.svg",
+        "icon_alt": "Logo Rabas",
+        "description": "As an improvement team manager and coach, I used the DINAMIC method to optimise mass machining and improve production changeovers on 15 machines. I also created more flexible lines, reducing errors and increasing production. I deployed ERP add-ons such as Satelites Helios to monitor schedule changes in real time and reduce overall stock.",
+        "title_result": "Results",
+        "result": [
+          "Validation of the Generalist Engineering diploma ;",
+          "Team management ;Profit monitoring ;",
+          "Acquisition of VBA use;",
+          "Process optimisation: 120 k€ / year in benefits."
+        ]
+      },
+      {
+        "title": "Production technician",
+        "entreprise": "Airbus",
+        "location": "Nantes",
+        "date_entrer": "Jul. 2011",
+        "date_sortie": "Oct. 2016",
+        "url": "https://www.airbus.com/en/products-services/commercial-aircraft",
+        "icon": "img/main/airbus-icon.svg",
+        "icon_alt": "Logo Airbus",
+        "description": "Experience in assembling wing centre sections for the A320, A330 and A350 programmes. Tasks carried out: making up the panels, semi-automated assembly on the machine, finishing the panels and demoulding. I was also responsible for replacing workstations on the casing production lines, from the start of the lines to delivery (from Nantes to St Nazaire), as well as managing the logistics of components requiring no modification for all programmes.",
+        "title_result": "Results",
+        "result": ["Working in teams;", "Discovering new professions."]
+      },
+      {
+        "title": "Improvement technician",
+        "entreprise": "Aérolia (ex-Airbus)",
+        "location": "Saint Nazaire",
+        "date_entrer": "Jan. 2009",
+        "date_sortie": "Jun. 2011",
+        "url": "https://www.airbus.com/en/airbus-atlantic",
+        "icon": "img/main/airbus-icon.svg",
+        "icon_alt": "Airbus logo to illustrate Aerolia",
+        "description": "As a continuous improvement technician, I played a role in participating in LEAN meetings and improving machines and the workshop using LEAN methods such as SMED (Single Minute Exchange of Die), TPM (Total Productive Maintenance) and 5S (Seiri/Sort, Seiton/Straighten, Seiso/Shine, Seiketsu/Standardize, Shitsuke/Sustain). I was also responsible for managing and coaching LEAN actions throughout the workshop. I planned and implemented an improvement room serving as an execution centre for the aluminium profile manufacturing workshops. Thanks to these actions, we were able to significantly improve production quality, reduce downtime and increase the workshop's productivity. In addition, I was in charge of monitoring key performance indicators, as well as training and developing the production teams.",
+        "title_result": "Results",
+        "result": [
+          "Team management ;",
+          "Discovering improvement methods ;",
+          "Project management."
+        ]
+      },
+      {
+        "title": "Manufacturing technician",
+        "entreprise": "Airbus",
+        "location": "Saint Nazaire",
+        "date_entrer": "Apr. 2003",
+        "date_sortie": "Dec. 2008",
+        "url": "https://www.airbus.com/en/airbus-atlantic",
+        "icon": "img/main/airbus-icon.svg",
+        "icon_alt": "Airbus logo",
+        "description": "As a manufacturing agent for aluminium, aluminium-lithium and titanium parts, I worked on the production of small sections, maximum 150 mm squared in lengths of up to 10 m. I worked with the methods department to demonstrate new manufacturing processes, and I also coached and trained new arrivals. I closely monitored the performance of the equipment to ensure optimum quality of the parts produced.",
+        "title_result": "Results",
+        "result": [
+          "Teamwork ;",
+          "Tutoring for new arrivals;",
+          "Use of new software and desks."
+        ]
+      },
+      {
+        "title": "Toolmaker - Draughtsman",
+        "entreprise": "SARL Chapuis",
+        "location": "Auxerre",
+        "date_entrer": "Oct. 2001",
+        "date_sortie": "Mar. 2003",
+        "description": "Design, manufacture, assembly, delivery and testing of plastic injection moulds in the automotive, aerospace, cosmetics and other sectors. Working from the drawing board, cutting, traditional machining (turning - milling), CNC programming, milling, drilling, grinding, assembly and delivery with testing.",
+        "title_result": "Results",
+        "result": [
+          "Supplier / customer relations ;",
+          "Acquiring rigour in the mould."
+        ]
+      },
+      {
+        "title": "Turner - Milling machine - Grinder - Adjuster",
+        "entreprise": "S.L.A.M",
+        "location": "Saint Brévins",
+        "date_entrer": "Sep. 1996",
+        "date_sortie": "Sep. 2001",
+        "description": "Manufacture of parts, tools and special machines for aeronautical, naval and other subcontracting sectors. Work on conventional and numerically controlled 2-axis lathes. Work on 3-axis to 5-axis milling machines with traditional and numerical control. Adjustment of parts at the end of the process. Rectification of parts.",
+        "title_result": "Results",
+        "result": [
+          "Validation of the Bac and BEP Productique;",
+          "Apprenticeship in machining trades in various sectors."
+        ]
       }
-  
+    ]
+  },
+  "footer": {
+    "title": "EMAIL CONTACT AT",
+    "iconLeft": { "prefix": "fas", "iconName": "faEnvelopeOpen" },
+    "iconLeftAlt": "Email copywriting for david launay",
+    "iconRight": { "prefix": "fas", "iconName": "faPaperPlane" },
+    "iconRightAlt": "Send email to david launay",
+    "placeholder": "Your e-mail"
+  },
+  "formulaire": {
+    "title": "Required if *",
+    "site": "Website",
+    "name": "Last Name *",
+    "surname": "First Name *",
+    "email": "E-mail",
+    "phone": "Phone",
+    "comments": "Comments",
+    "commentPlaceholder": "Thank you for leaving a comment !",
+    "submit": "Submit",
+    "thank": "We have received your email and will reply as soon as possible.",
+    "message": {
+      "email": {
+        "required": "This field is required",
+        "email": "The email must match"
+      },
+      "phone": {
+        "number": "Must be numbers"
+      },
+      "site": {
+        "url": "Url must be at least 'https://' or 'http://'"
+      },
+      "generic": {
+        "else": "Server code issues",
+        "catch": "Server issues"
+      }
     }
+  }
 }

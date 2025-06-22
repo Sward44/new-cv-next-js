@@ -1,258 +1,244 @@
 {
-  "document":
-    {
-      "title": "David Launay - Entrepreneur",
-      "description": "Fort de 20 ans d'expérience, j'ai évolué vers l'analyse de données et le référencement moteur de recherche. Mon expertise technique et ma vision stratégique renforcent ma capacité à optimiser la visibilité en ligne, démontrant une adaptabilité et une passion pour le digital.",
-      "manifest": "/manifest.json"
-    },
-  "header":
-    {
-      "title": "Full-stack & Designer"
-    },
-  "aside":
-    {
-      "section": [
-        "CONTACT",
-        "ÉDUCATION",
-        "COMPÉTENCES",
-        "LANGUES",
-        "CENTRE D'INTERÊT"
-      ],
-      "contact":[
-        {
-          "title": "Téléphone :",
-          "title_hover": "Cliquer ici pour appeler",
-          "icon": {"prefix" : "fas", "iconName": "faPhone"},
-          "icon_alt": "Appel de david launay",
-          "description": "+33 (0)6 36 94 69 70",
-          "url": "telto:+33636946970"
-        },
-        {
-          "title": "Email :",
-          "title_hover": "Cliquer ici pour envoyer un email",
-          "icon": {"prefix" : "fas", "iconName": "faEnvelope"},
-          "icon_alt": "Envoie de mail à david launay",
-          "description": "davidlaunay567@gmail.com",
-          "url": "mailto:davidlaunay567@gmail.com"
-        },
-        {
-          "title": "Adresse :",
-          "title_hover": "Cliquer ici pour découvrir le secteur",
-          "icon": {"prefix" : "fas", "iconName": "faLocationDot"},
-          "icon_alt": "Adresse de david launay",
-          "description": "Le Pellerin, France",
-          "url": "https://goo.gl/maps/67yWc4vdLkcJh1op7"
-        },
-        {
-          "title": "Social:",
-          "title_hover": "Cliquer ici pour aller sur LinkedIn",
-          "icon": {"prefix" : "fab", "iconName": "faLinkedin"},
-          "icon_alt": "Profil public sur Linkedin de david launay",
-          "description": "@david-launay",
-          "url": "https://www.linkedin.com/in/david-launay-178576b1/?locale=fr_FR"
-        },
-        {
-          "title": "Developpement:",
-          "title_hover": "Cliquer ici pour aller sur GitHub",
-          "icon": {"prefix" : "fab", "iconName": "faSquareGithub"},
-          "icon_alt": "Profil public sur GitHub de david launay",
-          "description": "Sward44",
-          "url": "https://github.com/Sward44"
-        }
-      ],
-    "education":[
-        {
-          "title": "DYMA - En ligne",
-          "description": [
-            "Full Stack"
-          ],
-          "icon": "img/aside/education/dyma-icon.svg",
-          "url": "https://dyma.fr/",
-          "icon_alt": "Dyma - Formation de developpement site web.",
-          "img": "img/aside/education/dyma-html.webp"
-        },
-        {
-          "title": "Mindeo - En ligne",
-          "description": [
-            "E-commerce - Mindset - AI"
-          ],
-          "icon": "img/aside/education/mindeo-icon.svg",
-          "url": "https://www.mindeo.com/",
-          "icon_alt": "Yomi - Formation complète de site e-commerce.",
-          "img": "img/aside/education/mindeo-html.webp"
-        },
-        {
-          "title": "WSE - Nantes",
-          "description": [
-            "Anglais"
-          ],
-          "icon": "img/aside/education/wse-icon.svg",
-          "url": "https://www.wallstreetenglish.fr/",
-          "icon_alt": "Wall Street English - Formation d'apprentissage d'anglais.",
-          "img": "img/aside/education/wse-html.webp"
-        },
-        {
-          "title": "BEA - Manchester",
-          "description": [
-            "Anglais"
-          ],
-          "icon": "img/aside/education/bea-icon.svg",
-          "url": "https://www.britannia-school.com/",
-          "icon_alt": "British English Academy - Formation d'anglais.",
-          "img": "img/aside/education/bea-html.webp"
-        },
-        {
-          "title": "CESI - St Nazaire",
-          "description": [
-            "Ingénieur généraliste - amélioration continue"
-          ],
-          "icon": "img/aside/education/cesi-icon.svg",
-          "url": "https://www.cesi.fr/programmes/cycle-preparatoire-integre/?gclid=Cj0KCQjw166aBhDEARIsAMEyZh68XSXVR53vFy_bbvWPGmf0P1un3MW-YcVlMd0bvZs95-7ZLZvnuxoaAkUXEALw_wcB",
-          "icon_alt": "CESI - Formation d'ingénieur généraliste spécialisation amélioration continue.",
-          "img": "img/aside/education/cesi-html.webp"
-        },
-        {
-          "title": "AFPI - Nantes",
-          "description": [
-            "BEP & Bac productique mécanique"
-          ],
-          "icon": "img/aside/education/afpi-icon.svg",
-          "url": "https://www.afpi-acmformation.com/",
-          "icon_alt": "AFPI -Formation productique mécanique Bac et BEP.",
-          "img": "img/aside/education/afpi-html.webp"
-        }
-      ],
-      "computing": [
-        {
-          "title": "Developpement web",
-          "score": ["html", "htmlDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/html-css-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5dab7f032482b13eb493df12",
-              "icon_alt": "Language utiliser dans les navigateurs : HTML-CSS-JS."
-            },
-            {
-              "icon": "img/aside/informatique/sass-icon.svg",
-              "url": "https://sass-lang.com/",
-              "icon_alt": "Compilation du CSS après écriture SCSS."
-            }
-          ]
-          
-        },
-        {
-          "title": "Analyse data",
-          "score": ["js", "jsDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/js-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
-              "icon_alt": "Language utilisé pour animé dans les navigateurs et envoyé les données sur le serveur : JS."
-            },
-            {
-              "icon": "img/aside/informatique/react-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/628e08287436c6ee0c1480b9",
-              "icon_alt": "React est un language utilisé pour créer, compiler et minifier des designs modernes : JS(X), TS(X)."
-            },
-            {
-              "icon": "img/aside/informatique/next-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/64157e14383e2a02a5c7e82c",
-              "icon_alt": "Next est un langage utilisé pour compiler le langage html, css, javascipt côté serveur en surcouche de React."
-            },
-            {
-              "icon": "img/aside/informatique/linux-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5f39a9aa3298c65e1adc38a6",
-              "icon_alt": "Plateforme fonctionant sous Linux avec des définitons proches entre les OS-Linux."
-            }
-          ]
-        },
-        {
-          "title": "Design",
-          "score": ["windows", "windowsDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/windows-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
-              "icon_alt": "Plateforme fonctionant sous Windows."
-            },
-            {
-              "icon": "img/aside/informatique/office-icon.svg",
-              "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/628e08287436c6ee0c1480b9",
-              "icon_alt": "Office est la suite de logiciel bureautique Windows."
-            },
-            {
-              "icon": "img/aside/informatique/vb-icon.svg",
-              "url": "https://learn.microsoft.com/fr-fr/dotnet/visual-basic/",
-              "icon_alt": "Visual Basic pour programmé toutes les applications avec un langage compilé et VBA pour créer des programmes pour les applications Office."
-            }
-          ] 
-        },
-        {
-          "title": "CopyWritting",
-          "score": ["erp", "erpDot"],
-          "icons":[
-            {
-              "icon": "img/aside/informatique/aras-icon.svg",
-              "url": "https://www.aras.com/fr-fr",
-              "icon_alt": "Product Life Management est la définition de PLM dont Aras est une plateforme issue d'Oracle."
-            },
-            {
-              "icon": "img/aside/informatique/catia-icon.svg",
-              "url": "https://www.3ds.com/products/catia",
-              "icon_alt": "Product Life Management est la définition de PLM dont Enovia est une plateforme issue de Dassault Systèmes."
-            },
-            {
-              "icon": "img/aside/informatique/sap-icon.svg",
-              "url": "https://www.sap.com/france/index.html?url_id=auto_hp_redirect_france",
-              "icon_alt": "Enterprise Ressource Planning est la définition dont SAP est un plateforme utilisés notament dans l'aéronautique."
-            }
-          ] 
-        }
-      ],
-      "langue":[
-        {
-          "starCount":5,
-          "icon_alt": "Niveau en langues en français",
-          "flag": "img/aside/langues/france-icon.svg",
-          "flag_alt": "Drapeau de la France"
-        },
-        {
-          "starCount":3,
-          "icon_alt": "Niveau en langues en anglais",
-          "flag": "img/aside/langues/uk-icon.svg",
-          "flag_alt": "Drapeau du Royaume-Uni"
-        }
-      ],
-      "hobbies":[
-        {
-          "icon": "img/aside/hobbies/around.svg",
-          "icon_alt": "Faire le tour du monde"
-        },
-        {
-          "icon": "img/aside/hobbies/computer.svg",
-          "icon_alt": "Aime la programmation"
-        },
-        {
-          "icon": "img/aside/hobbies/traveler.svg",
-          "icon_alt": "Adore la marche"
-        },
-        {
-          "icon": "img/aside/hobbies/fishing.svg",
-          "icon_alt": "Aime pêcher"
-        },
-        {
-          "icon": "img/aside/hobbies/hunting.svg",
-          "icon_alt": "Aime la chasse avec un arc"
-        }
-      ]
-    },
-  "main": {
-    "profil":
+  "document": {
+    "title": "David Launay - Entrepreneur",
+    "description": "Fort de 20 ans d'expérience, j'ai évolué vers l'analyse de données et le référencement moteur de recherche. Mon expertise technique et ma vision stratégique renforcent ma capacité à optimiser la visibilité en ligne, démontrant une adaptabilité et une passion pour le digital.",
+    "short_name": "Mon Curriculum Vitae",
+    "name": "David Launay - Mon Curriculum Vitae - Entrepreneur ou Salarié",
+    "manifest_description": "Fort de 20 ans d'expérience, j'ai évolué vers l'analyse de données et le référencement moteur de recherche. Mon expertise technique et ma vision stratégique renforcent ma capacité à optimiser la visibilité en ligne, démontrant une adaptabilité et une passion pour le digital.",
+    "lang": "fr"
+  },
+  "header": {
+    "title": "Full-stack & Designer"
+  },
+  "aside": {
+    "section": [
+      "CONTACT",
+      "ÉDUCATION",
+      "COMPÉTENCES",
+      "LANGUES",
+      "CENTRE D'INTERÊT"
+    ],
+    "contact": [
       {
-        "title_profil" : "PROFIL PROFESSIONNEL",
-        "description" : "Développeur Full-stack avec plus de 2 ans d'expérience, spécialisé en Next.js, React, et MongoDB, avec une solide expertise en télétravail et freelance. Fort d'une expérience en management transversal de projets et en analyse de données dans l'industrie aérospatiale, je suis un esprit créatif et autonome, prêt à m'investir dans une équipe dynamique. Mon objectif est de contribuer à l'amélioration continue, à la satisfaction clientèle, et à l'augmentation des profits de l'entreprise.",
-        "title_experience" : "EXPÉRIENCES PROFESSIONNELLES"
+        "title": "Téléphone :",
+        "title_hover": "Cliquer ici pour appeler",
+        "icon": { "prefix": "fas", "iconName": "faPhone" },
+        "icon_alt": "Appel de david launay",
+        "description": "+33 (0)7 68 50 79 04",
+        "url": "tel:+33768507904"
       },
+      {
+        "title": "Email :",
+        "title_hover": "Cliquer ici pour envoyer un email",
+        "icon": { "prefix": "fas", "iconName": "faEnvelope" },
+        "icon_alt": "Envoie de mail à david launay",
+        "description": "davidlaunay567@gmail.com",
+        "url": "mailto:davidlaunay567@gmail.com"
+      },
+      {
+        "title": "Adresse :",
+        "title_hover": "Cliquer ici pour découvrir le secteur",
+        "icon": { "prefix": "fas", "iconName": "faLocationDot" },
+        "icon_alt": "Adresse de david launay",
+        "description": "Le Pellerin, France",
+        "url": "https://goo.gl/maps/67yWc4vdLkcJh1op7"
+      },
+      {
+        "title": "Social:",
+        "title_hover": "Cliquer ici pour aller sur LinkedIn",
+        "icon": { "prefix": "fab", "iconName": "faLinkedin" },
+        "icon_alt": "Profil public sur Linkedin de david launay",
+        "description": "@david-launay",
+        "url": "https://www.linkedin.com/in/david-launay-178576b1/?locale=fr_FR"
+      },
+      {
+        "title": "Developpement:",
+        "title_hover": "Cliquer ici pour aller sur GitHub",
+        "icon": { "prefix": "fab", "iconName": "faSquareGithub" },
+        "icon_alt": "Profil public sur GitHub de david launay",
+        "description": "Sward44",
+        "url": "https://github.com/Sward44"
+      }
+    ],
+    "education": [
+      {
+        "title": "DYMA - En ligne",
+        "description": ["Full Stack"],
+        "icon": "img/aside/education/dyma-icon.svg",
+        "url": "https://dyma.fr/",
+        "icon_alt": "Dyma - Formation de developpement site web.",
+        "img": "img/aside/education/dyma-html.webp"
+      },
+      {
+        "title": "Mindeo - En ligne",
+        "description": ["E-commerce - Mindset - AI"],
+        "icon": "img/aside/education/mindeo-icon.svg",
+        "url": "https://www.mindeo.com/",
+        "icon_alt": "Yomi - Formation complète de site e-commerce.",
+        "img": "img/aside/education/mindeo-html.webp"
+      },
+      {
+        "title": "WSE - Nantes",
+        "description": ["Anglais"],
+        "icon": "img/aside/education/wse-icon.svg",
+        "url": "https://www.wallstreetenglish.fr/",
+        "icon_alt": "Wall Street English - Formation d'apprentissage d'anglais.",
+        "img": "img/aside/education/wse-html.webp"
+      },
+      {
+        "title": "BEA - Manchester",
+        "description": ["Anglais"],
+        "icon": "img/aside/education/bea-icon.svg",
+        "url": "https://www.britannia-school.com/",
+        "icon_alt": "British English Academy - Formation d'anglais.",
+        "img": "img/aside/education/bea-html.webp"
+      },
+      {
+        "title": "CESI - St Nazaire",
+        "description": ["Ingénieur généraliste - amélioration continue"],
+        "icon": "img/aside/education/cesi-icon.svg",
+        "url": "https://www.cesi.fr/programmes/cycle-preparatoire-integre/?gclid=Cj0KCQjw166aBhDEARIsAMEyZh68XSXVR53vFy_bbvWPGmf0P1un3MW-YcVlMd0bvZs95-7ZLZvnuxoaAkUXEALw_wcB",
+        "icon_alt": "CESI - Formation d'ingénieur généraliste spécialisation amélioration continue.",
+        "img": "img/aside/education/cesi-html.webp"
+      },
+      {
+        "title": "AFPI - Nantes",
+        "description": ["BEP & Bac productique mécanique"],
+        "icon": "img/aside/education/afpi-icon.svg",
+        "url": "https://www.afpi-acmformation.com/",
+        "icon_alt": "AFPI -Formation productique mécanique Bac et BEP.",
+        "img": "img/aside/education/afpi-html.webp"
+      }
+    ],
+    "computing": [
+      {
+        "title": "Developpement web",
+        "score": ["html", "htmlDot"],
+        "icons": [
+          {
+            "icon": "img/aside/informatique/html-css-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5dab7f032482b13eb493df12",
+            "icon_alt": "Language utiliser dans les navigateurs : HTML-CSS-JS."
+          },
+          {
+            "icon": "img/aside/informatique/sass-icon.svg",
+            "url": "https://sass-lang.com/",
+            "icon_alt": "Compilation du CSS après écriture SCSS."
+          }
+        ]
+      },
+      {
+        "title": "Analyse data",
+        "score": ["js", "jsDot"],
+        "icons": [
+          {
+            "icon": "img/aside/informatique/js-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
+            "icon_alt": "Language utilisé pour animé dans les navigateurs et envoyé les données sur le serveur : JS."
+          },
+          {
+            "icon": "img/aside/informatique/react-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/628e08287436c6ee0c1480b9",
+            "icon_alt": "React est un language utilisé pour créer, compiler et minifier des designs modernes : JS(X), TS(X)."
+          },
+          {
+            "icon": "img/aside/informatique/next-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/64157e14383e2a02a5c7e82c",
+            "icon_alt": "Next est un langage utilisé pour compiler le langage html, css, javascipt côté serveur en surcouche de React."
+          },
+          {
+            "icon": "img/aside/informatique/linux-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5f39a9aa3298c65e1adc38a6",
+            "icon_alt": "Plateforme fonctionant sous Linux avec des définitons proches entre les OS-Linux."
+          }
+        ]
+      },
+      {
+        "title": "Design",
+        "score": ["windows", "windowsDot"],
+        "icons": [
+          {
+            "icon": "img/aside/informatique/windows-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/5de1a78332cf6b3128beee34",
+            "icon_alt": "Plateforme fonctionant sous Windows."
+          },
+          {
+            "icon": "img/aside/informatique/office-icon.svg",
+            "url": "https://dyma.fr/certification/62bf2048efcceecbdc170eb1/628e08287436c6ee0c1480b9",
+            "icon_alt": "Office est la suite de logiciel bureautique Windows."
+          },
+          {
+            "icon": "img/aside/informatique/vb-icon.svg",
+            "url": "https://learn.microsoft.com/fr-fr/dotnet/visual-basic/",
+            "icon_alt": "Visual Basic pour programmé toutes les applications avec un langage compilé et VBA pour créer des programmes pour les applications Office."
+          }
+        ]
+      },
+      {
+        "title": "CopyWritting",
+        "score": ["erp", "erpDot"],
+        "icons": [
+          {
+            "icon": "img/aside/informatique/aras-icon.svg",
+            "url": "https://www.aras.com/fr-fr",
+            "icon_alt": "Product Life Management est la définition de PLM dont Aras est une plateforme issue d'Oracle."
+          },
+          {
+            "icon": "img/aside/informatique/catia-icon.svg",
+            "url": "https://www.3ds.com/products/catia",
+            "icon_alt": "Product Life Management est la définition de PLM dont Enovia est une plateforme issue de Dassault Systèmes."
+          },
+          {
+            "icon": "img/aside/informatique/sap-icon.svg",
+            "url": "https://www.sap.com/france/index.html?url_id=auto_hp_redirect_france",
+            "icon_alt": "Enterprise Ressource Planning est la définition dont SAP est un plateforme utilisés notament dans l'aéronautique."
+          }
+        ]
+      }
+    ],
+    "langue": [
+      {
+        "starCount": 5,
+        "icon_alt": "Niveau en langues en français",
+        "flag": "img/aside/langues/france-icon.svg",
+        "flag_alt": "Drapeau de la France"
+      },
+      {
+        "starCount": 3,
+        "icon_alt": "Niveau en langues en anglais",
+        "flag": "img/aside/langues/uk-icon.svg",
+        "flag_alt": "Drapeau du Royaume-Uni"
+      }
+    ],
+    "hobbies": [
+      {
+        "icon": "img/aside/hobbies/around.svg",
+        "icon_alt": "Faire le tour du monde"
+      },
+      {
+        "icon": "img/aside/hobbies/computer.svg",
+        "icon_alt": "Aime la programmation"
+      },
+      {
+        "icon": "img/aside/hobbies/traveler.svg",
+        "icon_alt": "Adore la marche"
+      },
+      {
+        "icon": "img/aside/hobbies/fishing.svg",
+        "icon_alt": "Aime pêcher"
+      },
+      {
+        "icon": "img/aside/hobbies/hunting.svg",
+        "icon_alt": "Aime la chasse avec un arc"
+      }
+    ]
+  },
+  "main": {
+    "profil": {
+      "title_profil": "PROFIL PROFESSIONNEL",
+      "description": "Développeur Full-stack avec plus de 2 ans d'expérience, spécialisé en Next.js, React, et MongoDB, avec une solide expertise en télétravail et freelance. Fort d'une expérience en management transversal de projets et en analyse de données dans l'industrie aérospatiale, je suis un esprit créatif et autonome, prêt à m'investir dans une équipe dynamique. Mon objectif est de contribuer à l'amélioration continue, à la satisfaction clientèle, et à l'augmentation des profits de l'entreprise.",
+      "title_experience": "EXPÉRIENCES PROFESSIONNELLES"
+    },
     "experience": [
       {
         "title": "Full stack",
@@ -260,8 +246,8 @@
         "location": "St Aignan de Grand Lieu",
         "date_entrer": "Sep. 2023",
         "date_sortie": "Aujourd'hui",
-        "url":"https://buzz-ready.com",
-        "icon":"img/main/ha-couverture-icon.svg",
+        "url": "https://buzz-ready.com",
+        "icon": "img/main/ha-couverture-icon.svg",
         "iconPdf": "ha",
         "icon_alt": "Logo Ha Couverture",
         "description": "Ma mission chez 'Ha Couverture' consiste à créer un site web de A à Z, à travailler son référencement pour maximiser sa visibilité en ligne, et à optimiser sa diffusion. Cela inclut l'optimisation des images, l'intégration avec les réseaux sociaux, ainsi que le référencement sur les moteurs de recherche comme Google et Bing. Mon objectif est de garantir une présence digitale efficace et performante.",
@@ -278,8 +264,8 @@
         "location": "Montoir de bretagne",
         "date_entrer": "Dec. 2021",
         "date_sortie": "Jui. 2023",
-        "url":"https://www.ge.com/renewableenergy/wind-energy/offshore-wind",
-        "icon":"img/main/general_electric_icon.svg",
+        "url": "https://www.ge.com/renewableenergy/wind-energy/offshore-wind",
+        "icon": "img/main/general_electric_icon.svg",
         "iconPdf": "ge",
         "icon_alt": "Logo General Electric",
         "description": "Recruté chez General Electric, j'ai travaillé dans le département de gestion de l'amélioration continue du produit. J'ai créé des packages de modules de sous-traitance et géré les relations avec les partenaires. J'ai également effectué l'analyse des unités avec une sélection des unités dans les projets, en utilisant des outils tels que VBA puis j'ai tracé l'ensemble des comparaisons à l'aide de téléchargements de toutes les unités et effectués l'analyses avec VBA.",
@@ -297,8 +283,8 @@
         "location": "Les Sorinières",
         "date_entrer": "Jul. 2019",
         "date_sortie": "Avr. 2021",
-        "url":"https://www.juignet.fr/",
-        "icon":"img/main/juignet-icon.svg",
+        "url": "https://www.juignet.fr/",
+        "icon": "img/main/juignet-icon.svg",
         "iconPdf": "juignet",
         "icon_alt": "Logo Juignet",
         "description": "J'ai également travaillé en tant que coach pour des équipes et j'ai piloté la mise en place d'un ERP pour la gestion des achats. J'ai mis en place une automatisation des plannings sur Excel via VBA pour améliorer l'efficacité, la productivité et anticipé les recrutements de l'équipe. En outre, j'ai rédigé et déployé des fiches de sécurité pour garantir le respect des normes de sécurité en vigueur et j'ai programmé des machines pour améliorer les processus de production et optimiser les performances.",
@@ -307,7 +293,8 @@
           "Relation clients / fournisseurs ;",
           "Management des équipes ;",
           "Intermédiaire d'utilisation VBA ;",
-          "Redaction fiche sécurité."]
+          "Redaction fiche sécurité."
+        ]
       },
       {
         "title": "Ingénieur processus",
@@ -315,8 +302,8 @@
         "location": "Saint Nazaire",
         "date_entrer": "Nov. 2016",
         "date_sortie": "Jun. 2017",
-        "url":"http://www.rabas.fr/",
-        "icon":"img/main/rabas-icon.svg",
+        "url": "http://www.rabas.fr/",
+        "icon": "img/main/rabas-icon.svg",
         "iconPdf": "rabas",
         "icon_alt": "Logo Rabas",
         "description": "En tant que manager d'équipes d'amélioration et coach, j'ai suivi la méthode DINAMIC pour optimiser l'usinage de la masse et améliorer les changements de production sur 15 machines. J'ai également créé des lignes plus flexibles, réduisant ainsi les erreurs et augmentant la production. J'ai déployé des annexes ERP telles que Satelites Helios pour suivre en temps réel les changements de plannings et réduire le stock global.",
@@ -335,8 +322,8 @@
         "location": "Nantes",
         "date_entrer": "Jul. 2011",
         "date_sortie": "Oct. 2016",
-        "url":"https://www.airbus.com/en/products-services/commercial-aircraft",
-        "icon":"img/main/airbus-icon.svg",
+        "url": "https://www.airbus.com/en/products-services/commercial-aircraft",
+        "icon": "img/main/airbus-icon.svg",
         "iconPdf": "airbus",
         "icon_alt": "Logo Airbus",
         "description": "Expérience dans l'assemblage de caissons centraux de voilures pour les programmes A320, A330 et A350. Tâches effectuées : constitution des panneaux, assemblages semi-automatisés sur machine, finition des panneaux et démoulages. J'ai également été chargé de remplacer des postes sur les lignes de production des caissons, du départ des lignes à la livraison (de Nantes à St Nazaire), ainsi que de gérer la logistique des éléments ne nécessitant aucune modification pour tous les programmes.",
@@ -352,8 +339,8 @@
         "location": "Saint Nazaire",
         "date_entrer": "Jan. 2009",
         "date_sortie": "Jun. 2011",
-        "url":"https://www.airbus.com/fr/airbus-atlantic",
-        "icon":"img/main/airbus-icon.svg",
+        "url": "https://www.airbus.com/fr/airbus-atlantic",
+        "icon": "img/main/airbus-icon.svg",
         "icon_alt": "Logo Airbus pour illustré Aerolia",
         "description": "En tant que technicien d'amélioration continue, j'ai joué un rôle dans la participation dans les réunions LEAN et amélioré les machines et l'atelier grâce aux méthodes du LEAN telles que SMED (Single Minute Exchange of Die), TPM (Total Productive Maintenance) et 5S (Seiri/Eliminer, Seiton/Ranger, Seiso/Nettoyer, Seiketsu/Standardiser, Shitsuke/Respecter). J'ai également été chargé du management et du coaching des actions LEAN dans l'ensemble de l'atelier. J'ai planifié et mis en œuvre un local d'amélioration servant de pôle d'exécution pour les ateliers de fabrication de profilé en aluminium. Grâce à ces actions, nous avons pu améliorer considérablement la qualité de production, réduire les temps d'arrêt et augmenter la productivité de l'atelier. De plus, j'ai été en charge du suivi des indicateurs de performance clés, ainsi que de la formation et du développement des équipes de production.",
         "title_result": "Résultats",
@@ -369,8 +356,8 @@
         "location": "Saint Nazaire",
         "date_entrer": "Avr. 2003",
         "date_sortie": "Dec. 2008",
-        "url":"https://www.airbus.com/fr/airbus-atlantic",
-        "icon":"img/main/airbus-icon.svg",
+        "url": "https://www.airbus.com/fr/airbus-atlantic",
+        "icon": "img/main/airbus-icon.svg",
         "icon_alt": "Logo Airbus",
         "description": "En tant qu'agent de fabrication des pièces en aluminium, alu-lithium et titane, j'ai travaillé sur la production de petites sections, maximum 150 mm au carrés sur des longueurs allant jusqu'à 10 m. J'ai collaboré avec le service méthodes pour démontrer de nouveaux processus de fabrication, j'ai également coaché et formé les nouveaux arrivants. J'ai suivi de près les performances des équipements pour assurer une qualité optimale des pièces produites.",
         "title_result": "Résultats",
@@ -408,37 +395,37 @@
       }
     ]
   },
-  "selection":{
+  "selection": {
     "title": "Langages",
-    "options" : [
-      { "label": "Français",
+    "options": [
+      {
+        "label": "Français",
         "value": "fr",
         "valueFlag": "FR",
         "flag": "img/aside/langues/france-icon.svg",
         "flag_alt": "Drapeau de la France",
-        "iconName":"faChevronDown"
+        "iconName": "faChevronDown"
       },
-      { 
+      {
         "label": "English",
         "value": "en",
         "valueFlag": "GB",
         "flag": "img/aside/langues/uk-icon.svg",
         "flag_alt": "Drapeau du Royaume-Uni",
-        "iconName":"faChevronDown"
+        "iconName": "faChevronDown"
       }
     ]
   },
-  "footer":{
+  "footer": {
     "title": "EMAIL CONTACT A :",
-    "iconLeft": {"prefix" : "fas", "iconName": "faEnvelopeOpen"},
+    "iconLeft": { "prefix": "fas", "iconName": "faEnvelopeOpen" },
     "iconLeftAlt": "Reédaction d'email pour david launay",
-    "iconRight": {"prefix" : "fas", "iconName": "faPaperPlane"},
+    "iconRight": { "prefix": "fas", "iconName": "faPaperPlane" },
     "iconRightAlt": "Envoie d'email à david launay",
     "placeholder": "Votre email"
   },
 
-    
-  "formulaire":{
+  "formulaire": {
     "title": "Obligatoire si *",
     "site": "Site web",
     "name": "Nom *",
@@ -452,7 +439,7 @@
     "message": {
       "email": {
         "required": "Ce champs est obligatoire",
-        "email":"L'email doit correspondre"
+        "email": "L'email doit correspondre"
       },
       "phone": {
         "number": "Doit être des nombres"
@@ -465,8 +452,5 @@
         "catch": "Problèmes serveurs"
       }
     }
-    
-
-
   }
 }
