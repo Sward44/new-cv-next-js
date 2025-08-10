@@ -5,6 +5,7 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ["@react-pdf/renderer"],
   },
+  compress: false,
   reactStrictMode: true,
   async rewrites() {
     return [

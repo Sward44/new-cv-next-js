@@ -6,6 +6,8 @@ import { getDictionary } from "./dictionaries";
 export async function generateMetadata({ params }) {
   const meta = await getDictionary(params.locale);
   const manifest = {
+    start_url: "/",
+    display: "standalone",
     short_name: meta.document.short_name,
     name: meta.document.name,
     description: meta.document.manifest_description,
@@ -20,6 +22,7 @@ export async function generateMetadata({ params }) {
         type: "image/x-icon",
         sizes: "32x32",
         alt: "favion curriculum vitae",
+        set: "all",
       },
       {
         src: "android-chrome-icon-192x192.png",
@@ -27,6 +30,7 @@ export async function generateMetadata({ params }) {
         type: "image/png",
         sizes: "192x192",
         alt: "favion curriculum vitae",
+        set: "all",
       },
       {
         src: "android-chrome-icon-512x512.png",
@@ -34,6 +38,7 @@ export async function generateMetadata({ params }) {
         type: "image/png",
         sizes: "512x512",
         alt: "favion curriculum vitae",
+        set: "all",
       },
       {
         src: "david-launay-icon.svg",
@@ -41,12 +46,14 @@ export async function generateMetadata({ params }) {
         type: "image/svg+xml",
         sizes: "any",
         alt: "favion curriculum vitae",
+        set: "all",
       },
       {
         src: "/david-launay-reseau-sociaux.webp",
         type: "image/webp",
         sizes: "1200x628",
         alt: "David Launay|Entrepreneur|Mon cv pour les réseaux sociaux",
+        set: "all",
       },
     ],
     categories: [
@@ -61,8 +68,6 @@ export async function generateMetadata({ params }) {
       "network",
       "productivity",
     ],
-    start_url: `${process.env.HOST}`,
-    display: "standalone",
     theme_color: "#000000",
     background_color: "#ffffff",
   };
