@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "sass src/style/main.scss dist/style.css && csso dist/style.css -o dist/style.min.css && next dev --turbopack",
+    "build": "sass src/style/main.scss dist/style.css && csso dist/style.css -o dist/style.min.css && next build --turbopack",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,26 +19,32 @@
     "@react-pdf/renderer": "^3.4.4",
     "@types/nodemailer": "^6.4.14",
     "@types/react-transition-group": "^4.4.10",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
     "axios": "^1.6.7",
     "cross-env": "^7.0.3",
+    "csso-cli": "^4.0.2",
+    "dotenv": "^17.2.1",
+    "fs": "^0.0.1-security",
     "mongod": "^2.0.0",
     "mongodb": "^6.3.0",
     "mongoose": "^8.1.1",
     "negotiator": "^0.6.3",
-    "next": "14.0.4",
+    "next": "^15.4.6",
     "nodemailer": "^6.9.8",
+    "path": "^0.12.7",
     "pdfjs-dist": "^4.5.136",
     "pug": "^3.0.2",
-    "react": "^18",
+    "react": "^18.3.1",
     "react-country-flag": "^3.1.0",
-    "react-dom": "^18",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.49.3",
     "react-transition-group": "^4.4.5",
     "sass": "^1.69.7",
+    "turbo": "^2.5.5",
     "yup": "^1.3.3"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^15.4.6"
   }
 }

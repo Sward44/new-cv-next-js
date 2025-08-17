@@ -1,4 +1,4 @@
-@import "../../../style/media-queries";
+@use "../../../style/media-queries" as mq;
 
 .header {
   grid-area: header;
@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include xs {
+  @include mq.xs {
     padding: 0.5rem 1rem;
     align-content: flex-start;
     position: -webkit-sticky;
@@ -20,7 +20,7 @@
     top: -44px;
     z-index: 2;
   }
-  @include sm {
+  @include mq.sm {
     padding: 0.5rem 1rem;
     align-content: flex-start;
     position: -webkit-sticky;
@@ -33,17 +33,17 @@
     line-height: 8rem;
     font-weight: 300;
     letter-spacing: 2rem;
-    @include xs {
+    @include mq.xs {
       font-size: 3rem;
       line-height: 3.2rem;
       letter-spacing: 1.2rem;
     }
-    @include sm {
+    @include mq.sm {
       font-size: 4rem;
       line-height: 4.3rem;
       letter-spacing: 1.5rem;
     }
-    @include md {
+    @include mq.md {
       font-size: 5rem;
       line-height: 5rem;
       letter-spacing: 1.2rem;

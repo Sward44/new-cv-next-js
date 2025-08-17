@@ -1,80 +1,10 @@
-import "./globals.scss";
-import { mulish } from "@/fonts/fonts";
+import "../../style/main.scss";
 import { availableLocales } from "@/utiltaire/i18n";
 import { getDictionary } from "./dictionaries";
 
 export async function generateMetadata({ params }) {
-  const meta = await getDictionary(params.locale);
-  const manifest = {
-    start_url: "/",
-    display: "standalone",
-    short_name: meta.document.short_name,
-    name: meta.document.name,
-    description: meta.document.manifest_description,
-    prefer_related_applications: false,
-    lang: meta.document.lang,
-    author: "David Launay",
-    manifestVersion: 4,
-    icons: [
-      {
-        src: "favicon.ico",
-        rel: "shortcut icon",
-        type: "image/x-icon",
-        sizes: "32x32",
-        alt: "favion curriculum vitae",
-        set: "all",
-      },
-      {
-        src: "android-chrome-icon-192x192.png",
-        rel: "icon",
-        type: "image/png",
-        sizes: "192x192",
-        alt: "favion curriculum vitae",
-        set: "all",
-      },
-      {
-        src: "android-chrome-icon-512x512.png",
-        rel: "icon",
-        type: "image/png",
-        sizes: "512x512",
-        alt: "favion curriculum vitae",
-        set: "all",
-      },
-      {
-        src: "david-launay-icon.svg",
-        rel: "icon",
-        type: "image/svg+xml",
-        sizes: "any",
-        alt: "favion curriculum vitae",
-        set: "all",
-      },
-      {
-        src: "/david-launay-reseau-sociaux.webp",
-        type: "image/webp",
-        sizes: "1200x628",
-        alt: "David Launay|Entrepreneur|Mon cv pour les réseaux sociaux",
-        set: "all",
-      },
-    ],
-    categories: [
-      "business",
-      "design",
-      "developer",
-      "developer tools",
-      "development",
-      "education",
-      "graphics",
-      "graphics & design",
-      "network",
-      "productivity",
-    ],
-    theme_color: "#000000",
-    background_color: "#ffffff",
-  };
-
-  const manifestContent = JSON.stringify(manifest, null, 2);
-  const fs = require("fs");
-  fs.writeFileSync("public/manifest.json", manifestContent);
+  const { locale } = await params;
+  const meta = await getDictionary(locale);
 
   return {
     title: meta.document.title,
@@ -90,12 +20,12 @@ export async function generateMetadata({ params }) {
       description: meta.document.description,
       url: `${process.env.HOST}`,
       type: "website",
-      locale: params.locale,
+      locale: meta.document.lang,
       images: {
         url: `${process.env.HOST}/david-launay-reseau-sociaux.webp`,
       },
     },
-    manifest: "/manifest.json",
+    manifest: `/manifest.json?locale=${locale}`,
   };
 }
 
@@ -104,10 +34,13 @@ export function generateStaticParams() {
     locale,
   }));
 }
+
 export default async function RootLayout({ children, params }) {
+  const { locale } = await params;
+
   return (
-    <html lang={params.locale}>
-      <body className={mulish.variable}>{children}</body>
+    <html lang={locale}>
+      <body style={{ fontFamily: "var(--font-mulish)" }}>{children}</body>
     </html>
   );
 }

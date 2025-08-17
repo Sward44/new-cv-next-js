@@ -1,24 +1,38 @@
 import Image from "next/image";
 import LinkReact from "@/components/transition/LinkReact";
+import {
+  afpiIcon,
+  beaIcon,
+  cesiIcon,
+  dymaIcon,
+  mindeoIcon,
+  wseIcon,
+} from "@/components/img/aside/education/logoEducation/logoEducation";
+
+const iconEducation = {
+  dyma: dymaIcon,
+  mindeo: mindeoIcon,
+  bea: beaIcon,
+  wse: wseIcon,
+  cesi: cesiIcon,
+  afpi: afpiIcon,
+};
 
 const Education = ({ education }) => {
   return (
     <>
-      {education.map((item, index) => (
-        <>
-          <LinkReact item={item} index={index}>
-            <Image
-              key={crypto.randomUUID()}
-              src={require(`../../../${item.icon}`).default}
-              height={26}
-              width={26}
-              alt={item.icon_alt}
-              style={{ marginRight: "10px" }}
-            />
-          </LinkReact>
-          <span style={{ margin: "0.5rem 0 2rem" }}>
-            {item.description.map((desc, i) => (
-              <>
+      {education.map((item, index) => {
+        let svgName = item.icon;
+        const SvgComponent = iconEducation[svgName];
+        return (
+          <div key={crypto.randomUUID()}>
+            <LinkReact item={item} index={index}>
+              <span style={{ width: "26px", marginRight: "10px" }}>
+                <SvgComponent alt={item.icon_alt} />
+              </span>
+            </LinkReact>
+            <span style={{ margin: "0.5rem 0 2rem" }}>
+              {item.description.map((desc, i) => (
                 <p
                   key={i}
                   style={{
@@ -29,11 +43,11 @@ const Education = ({ education }) => {
                 >
                   {desc}
                 </p>
-              </>
-            ))}
-          </span>
-        </>
-      ))}
+              ))}
+            </span>
+          </div>
+        );
+      })}
     </>
   );
 };

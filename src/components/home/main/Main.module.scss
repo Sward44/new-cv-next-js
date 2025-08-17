@@ -1,4 +1,4 @@
-@import "../../../style/media-queries";
+@use "../../../style/media-queries" as mq;
 
 .main {
   grid-area: main;
@@ -9,7 +9,7 @@
   }
   h2 {
     margin-bottom: 0.5rem;
-    @include md {
+    @include mq.md {
       font-size: 88%;
     }
   }
@@ -19,7 +19,7 @@
   }
   h3 {
     margin: 0;
-    @include md {
+    @include mq.md {
       font-size: 88%;
     }
   }
@@ -28,18 +28,18 @@
     line-height: 2.2rem;
     margin-top: 0;
     text-align: justify;
-    @include xs {
+    @include mq.xs {
       text-align: left;
     }
-    @include sm {
+    @include mq.sm {
       text-align: left;
     }
-    @include md {
+    @include mq.md {
       font-size: 88%;
     }
   }
   ul {
-    @include md {
+    @include mq.md {
       font-size: 88%;
     }
   }
@@ -47,11 +47,11 @@
     display: grid;
     grid: "timeline h3" auto "timeline text-hint" auto "timeline p" auto "timeline ul" auto / 120px auto;
     margin-top: 4rem;
-    @include xs {
+    @include mq.xs {
       grid: "timeline h3" auto "timeline text-hint" auto "p p" auto "ul ul" auto / 120px auto;
       margin: 4rem 0;
     }
-    @include sm {
+    @include mq.sm {
       grid: "timeline h3" auto "timeline text-hint" auto "p p" auto "ul ul" auto / 120px auto;
       margin: 4rem 0;
     }
@@ -64,7 +64,7 @@
       color: var(--hint);
       padding-right: 2rem;
       border-right: 1px solid var(--border);
-      @include xs {
+      @include mq.xs {
         font-size: 85%;
         padding-right: 0.7rem;
         margin-bottom: 1.2rem;
@@ -83,7 +83,7 @@
         }
       }
 
-      @include xs {
+      @include mq.xs {
         padding: 0.4rem 0 0 0.7rem;
         font-size: 90%;
       }
@@ -93,13 +93,11 @@
     }
     .imag {
       transition: scale 0.25s, opacity 0.25s;
-      height: 2.4rem;
-      padding-right: 0.5rem;
     }
     .titre {
       grid-area: h3;
       padding-left: 1.5rem;
-      @include xs {
+      @include mq.xs {
         padding: 0 0 0.4rem 0.7rem;
         font-size: 98%;
       }
@@ -107,7 +105,7 @@
     .texte {
       grid-area: p;
       padding-left: 1.5rem;
-      @include xs {
+      @include mq.xs {
         font-size: 95%;
         padding: 1.5rem 0;
       }
@@ -116,13 +114,13 @@
       grid-area: ul;
       list-style: disc;
       padding-left: 5rem;
-      @include xs {
+      @include mq.xs {
         font-size: 95%;
       }
     }
     .resultat {
       padding: 1rem 1.5rem;
-      @include xs {
+      @include mq.xs {
         padding-bottom: 0rem;
       }
       span {
@@ -132,7 +130,7 @@
   }
   .separator {
     display: none;
-    @include xs {
+    @include mq.xs {
       display: flex;
       margin: 1rem auto;
       height: 0.1rem;
@@ -140,7 +138,7 @@
       background: var(--border);
       border-radius: 50%;
     }
-    @include sm {
+    @include mq.sm {
       display: flex;
       margin: 1rem auto;
       height: 0.1rem;

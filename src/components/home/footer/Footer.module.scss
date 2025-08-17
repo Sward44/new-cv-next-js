@@ -1,4 +1,4 @@
-@import "../../../style/media-queries";
+@use "../../../style/media-queries" as mq;
 
 .footer {
   grid-area: footer;
@@ -11,12 +11,12 @@
   color: white;
   padding: 5rem;
   background: var(--text);
-  @include xs {
+  @include mq.xs {
     padding: 1rem 1rem 3rem;
   }
   h2 {
     margin-bottom: 3rem;
-    @include xs {
+    @include mq.xs {
       margin-bottom: 2rem;
     }
   }
@@ -65,10 +65,10 @@
       min-width: 400px;
       padding: 1rem 2rem;
       line-height: 2rem;
-      @include xs {
+      @include mq.xs {
         min-width: 150px;
       }
-      @include sm {
+      @include mq.sm {
         min-width: 250px;
       }
       &::placeholder {

@@ -1,4 +1,4 @@
-@import "../../../style/media-queries";
+@use "../../../style/media-queries" as mq;
 
 .selection {
   grid-area: selection;
@@ -11,12 +11,12 @@
   color: white;
   padding: 5rem;
   background: var(--text);
-  @include xs {
+  @include mq.xs {
     padding: 1rem 1rem 5rem;
   }
   h2 {
     margin-bottom: 3rem;
-    @include xs {
+    @include mq.xs {
       margin-bottom: 2rem;
     }
   }
@@ -39,10 +39,10 @@
     min-width: 20rem;
     padding: 1rem 2rem;
     line-height: 2rem;
-    @include xs {
+    @include mq.xs {
       min-width: 16rem;
     }
-    @include sm {
+    @include mq.sm {
       min-width: 18rem;
     }
     .text {
@@ -91,10 +91,10 @@
           opacity: 1;
         }
       }
-      @include xs {
+      @include mq.xs {
         min-width: 16rem;
       }
-      @include sm {
+      @include mq.sm {
         min-width: 18rem;
       }
     }
@@ -116,10 +116,10 @@
         opacity: 0;
       }
     }
-    @include xs {
+    @include mq.xs {
       min-width: 16rem;
     }
-    @include sm {
+    @include mq.sm {
       min-width: 18rem;
     }
   }

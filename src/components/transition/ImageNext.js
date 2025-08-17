@@ -4,7 +4,7 @@ const ImageNext = ({ item, index }) => {
   return (
     <Image
       index={index}
-      src={require(`../${item.img}`).default}
+      src={item.img}
       width={192}
       height={108}
       alt={item.icon_alt}

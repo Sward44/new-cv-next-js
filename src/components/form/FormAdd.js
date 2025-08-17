@@ -1,6 +1,12 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSpinner,
+  faXmark,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
+import { SendIcon } from "@/components/img/form/logoForm";
 import ReactCountryFlag from "react-country-flag";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
@@ -108,14 +114,14 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
     <div className={styles.formulaire}>
       {isLoading && (
         <FontAwesomeIcon
-          icon={require("@fortawesome/free-solid-svg-icons")["faSpinner"]}
+          icon={faSpinner}
           spinPulse
           className={styles.loadingSpin}
         />
       )}
       {isFinish.current ? (
         <div className={styles.containerFormulaire}>
-          <h2 style={{ "margin-bottom": "2rem" }}>{formulaire.thank}</h2>
+          <h2 style={{ marginBottom: "2rem" }}>{formulaire.thank}</h2>
           <button onClick={handlePopup}>Ok </button>
         </div>
       ) : (
@@ -124,8 +130,8 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
             <div className={styles.format}>
               <h2 className={styles.flexFill}>{formulaire.title}</h2>
               <FontAwesomeIcon
+                icon={faXmark}
                 onClick={handlePopup}
-                icon={require("@fortawesome/free-solid-svg-icons")["faXmark"]}
                 className={styles.mark}
               />
             </div>
@@ -172,11 +178,11 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
             </div>
             <div className={styles.form}>
               <label htmlFor="number">{formulaire.phone}</label>
-              <div className={styles.format} style={{ "margin-bottom": "0" }}>
+              <div className={styles.format} style={{ marginBottom: 0 }}>
                 <select
                   id="indicatif"
                   {...register("indicatif")}
-                  style={{ "margin-bottom": "1rem" }}
+                  style={{ marginBottom: "1rem" }}
                 >
                   {options.map((option) => (
                     <option key={option.optionValue} value={option.optionValue}>
@@ -189,7 +195,7 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
                   id="number"
                   type="number"
                   {...register("number", { valueAsNumber: true })}
-                  style={{ flex: "1 1 auto", "margin-bottom": "1rem" }}
+                  style={{ flex: "1 1 auto", marginBottom: "1rem" }}
                 />
                 {errors?.number && (
                   <p className={styles.errors}>{errors.number.message}</p>
@@ -201,17 +207,27 @@ function FormAdd({ onNewEmailReceive, handlePopup, formulaire, locale }) {
               id="comments"
               type="text"
               {...register("comments")}
-              style={{ "margin-bottom": "2rem" }}
+              style={{ marginBottom: "2rem" }}
               placeholder={formulaire.commentPlaceholder}
             ></textarea>
-            <button disabled={isSubmitting}>
-              <FontAwesomeIcon
-                icon={
-                  require("@fortawesome/free-solid-svg-icons")["faPaperPlane"]
-                }
-                style={{ marginRight: "2rem" }}
-              />
-              Envoyer
+            <button
+              disabled={isSubmitting}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+                justifyItems: "center",
+                alignItems: "center",
+              }}
+            >
+              <span
+                style={{
+                  fill: "white",
+                }}
+              >
+                <SendIcon />
+                <span style={{ marginLeft: "10px" }}>Envoyer</span>
+              </span>
             </button>
           </form>
         </div>

@@ -1,15 +1,13 @@
 "use client";
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDownload,
-  faFilePdf,
-  faPrint,
-} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import {
+  PdfIcon,
+  PrintIcon,
+  DownloadIcon,
+} from "@/components/img/header_pdf/logoPdf";
 
 function TelechargerPDF({ locale }) {
-  console.log("Paramètre locale dans TelechargerPDF : ", locale);
   const iframeRef = React.useRef(null);
   const [isHoveredPDF, setIsHoveredPDF] = React.useState(false);
   const [isHoveredDownload, setIsHoveredDownload] = React.useState(false);
@@ -27,42 +25,43 @@ function TelechargerPDF({ locale }) {
       iframeRef.current.contentWindow.print();
     }
   };
+
   return (
     <>
-      <Link href={`${locale}/20240830_CV_David-Launay_${locale}.pdf`}>
-        <FontAwesomeIcon
-          icon={faFilePdf}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          style={{
-            marginLeft: "20px",
-            paddingRight: "10px",
-            paddingLeft: "10px",
-            fontSize: "20px",
-            color: isHoveredPDF ? "white" : "white",
-            transform: isHoveredPDF ? "scale(1.05)" : "scale(1)",
-            transition: "all 0.3s",
-          }}
-        />
+      <Link
+        href={`${process.env.NEXT_PUBLIC_HOST}/${locale}/20240830_CV_David-Launay_${locale}.pdf`}
+      >
+        <span
+          style={{ width: "24px", marginLeft: "16px", marginRight: "16px" }}
+        >
+          <PdfIcon
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              fontSize: "20px",
+              transform: isHoveredPDF ? "scale(1.05)" : "scale(1)",
+              transition: "all 0.3s",
+            }}
+          />
+        </span>
       </Link>
-      <a
+      <Link
         href={`${locale}/20240830_CV_David-Launay_${locale}.pdf`}
         download={`20240830_CV_David-Launay_${locale}.pdf`}
       >
-        <FontAwesomeIcon
-          icon={faDownload}
-          onMouseEnter={handleMouseEnterDownload}
-          onMouseLeave={handleMouseLeaveDownload}
-          style={{
-            paddingRight: "10px",
-            paddingLeft: "10px",
-            fontSize: "20px",
-            color: isHoveredDownload ? "white" : "white",
-            transform: isHoveredDownload ? "scale(1.05)" : "scale(1)",
-            transition: "all 0.3s",
-          }}
-        />
-      </a>
+        <span style={{ width: "26px", marginRight: "16px" }}>
+          <DownloadIcon
+            onMouseEnter={handleMouseEnterDownload}
+            onMouseLeave={handleMouseLeaveDownload}
+            style={{
+              fontSize: "20px",
+              color: isHoveredDownload ? "white" : "white",
+              transform: isHoveredDownload ? "scale(1.05)" : "scale(1)",
+              transition: "all 0.3s",
+            }}
+          />
+        </span>
+      </Link>
 
       <iframe
         ref={iframeRef}
@@ -71,20 +70,21 @@ function TelechargerPDF({ locale }) {
         src={`${locale}/20240830_CV_David-Launay_${locale}.pdf`}
       />
       <span
+        onMouseEnter={handleMouseEnterPrint}
+        onMouseLeave={handleMouseLeavePrint}
+        onClick={handlePrint}
         style={{
-          paddingLeft: "10px",
-          paddingRight: "10px",
-          fontSize: "20px",
-          color: isHoveredPrint ? "white" : "white",
+          width: "24px",
           transform: isHoveredPrint ? "scale(1.1)" : "scale(1)",
           transition: "all 0.3s",
+          cursor: "pointer",
         }}
       >
-        <FontAwesomeIcon
-          icon={faPrint}
-          onMouseEnter={handleMouseEnterPrint}
-          onMouseLeave={handleMouseLeavePrint}
-          onClick={handlePrint}
+        <PrintIcon
+          style={{
+            fontSize: "20px",
+            color: isHoveredPrint ? "white" : "white",
+          }}
         />
       </span>
     </>

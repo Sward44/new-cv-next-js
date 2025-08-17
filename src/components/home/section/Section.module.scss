@@ -1,4 +1,4 @@
-@import "../../../style/media-queries.scss";
+@use "../../../style/media-queries.scss" as mq;
 
 .picture {
   position: relative;
@@ -7,21 +7,21 @@
   background: linear-gradient(to left, var(--light), var(--background));
   box-shadow: 0px 3px 0px 0px rgba(23, 29, 37, 0.1);
   justify-content: center;
-  @include xs {
+  @include mq.xs {
     background: linear-gradient(to left, var(--primary), var(--light));
     box-shadow: none;
   }
-  @include sm {
+  @include mq.sm {
     background: linear-gradient(to left, var(--primary), var(--light));
     box-shadow: none;
   }
   img {
     padding: 1.5rem;
-    @include xs {
+    @include mq.xs {
       padding: 1rem 0 0 0;
       // max-width: 50%;
     }
-    @include sm {
+    @include mq.sm {
       padding: 1rem 0 0 0;
       // max-height: 280px;
     }

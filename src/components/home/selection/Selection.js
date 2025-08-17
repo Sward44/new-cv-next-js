@@ -16,7 +16,6 @@ const Selection = ({ selection }) => {
   }, [currentLanguage]);
 
   return (
-
     <div className={styles.selection}>
       <h2 className={styles.titleSmall}>{selection.title}</h2>
       <div
@@ -32,7 +31,7 @@ const Selection = ({ selection }) => {
                 <p>{option.label}</p>
               </div>
               <div className={styles.icon}>
-                <FontAwesomeIcon
+                {/* <FontAwesomeIcon
                   key={index}
                   icon={
                     require("@fortawesome/free-solid-svg-icons")[
@@ -41,7 +40,7 @@ const Selection = ({ selection }) => {
                   }
                   height={16}
                   width={16}
-                />
+                /> */}
               </div>
             </div>
           ))}
@@ -66,4 +65,3 @@ const Selection = ({ selection }) => {
 };
 
 export default Selection;
-

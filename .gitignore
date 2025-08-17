@@ -15,7 +15,8 @@
 
 # production
 /build
-public/manifest.json
+public/manifest*
+scripts*
 
 # misc
 .DS_Store

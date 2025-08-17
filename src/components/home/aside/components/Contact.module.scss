@@ -1,4 +1,4 @@
-@import "../../../../style/media-queries";
+@use "../../../../style/media-queries" as mq;
 
 .locaAddress {
   display: flex;
@@ -10,7 +10,7 @@
       transition: all 0.25s;
     }
   }
-  @include md {
+  @include mq.md {
     font-size: 88%;
   }
 }

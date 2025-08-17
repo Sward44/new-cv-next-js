@@ -1,4 +1,4 @@
-@import "../../style/media-queries";
+@use "../../style/media-queries" as mq;
 
 .formulaire {
   position: fixed;
@@ -17,10 +17,10 @@
     z-index: 30;
     font-size: 200px;
     color: var(--dark);
-    @include sm {
+    @include mq.sm {
       font-size: 153px;
     }
-    @include xs {
+    @include mq.xs {
       font-size: 120px;
     }
   }
@@ -32,11 +32,11 @@
     border: 2px solid var(--hint);
     border-radius: 2rem;
     width: 600px;
-    @include sm {
+    @include mq.sm {
       width: 460px;
       font-size: 1.6rem;
     }
-    @include xs {
+    @include mq.xs {
       width: 360px;
       padding: 1.2rem;
       border-radius: 1rem;
@@ -66,20 +66,20 @@
       color: var(--text);
       font-size: 4rem;
       align-self: center;
-      @include sm {
+      @include mq.sm {
         font-size: 3.6rem;
       }
-      @include xs {
+      @include mq.xs {
         font-size: 3.4rem;
       }
     }
 
     label {
       font-size: 1.8rem;
-      @include sm {
+      @include mq.sm {
         font-size: 1.6rem;
       }
-      @include xs {
+      @include mq.xs {
         font-size: 1.5rem;
       }
     }
@@ -88,10 +88,10 @@
       border: 2px solid var(--hint);
       border-radius: 6px;
       font-size: 1.8rem;
-      @include sm {
+      @include mq.sm {
         font-size: 1.6rem;
       }
-      @include xs {
+      @include mq.xs {
         padding: 10px 1px;
         font-size: 1.5rem;
       }
@@ -103,10 +103,10 @@
       border: 2px solid var(--hint);
       border-radius: 6px;
       font-size: 1.8rem;
-      @include sm {
+      @include mq.sm {
         font-size: 1.6rem;
       }
-      @include xs {
+      @include mq.xs {
         min-width: 100px;
         font-size: 1.5rem;
       }
@@ -119,10 +119,10 @@
       border-radius: 6px;
       height: 250px;
       resize: none;
-      @include sm {
+      @include mq.sm {
         font-size: 1.6rem;
       }
-      @include xs {
+      @include mq.xs {
         height: 120px;
         font-size: 1.5rem;
       }
@@ -135,10 +135,10 @@
       color: white;
       font-size: 2rem;
     }
-    @include sm {
+    @include mq.sm {
       font-size: 1.8rem;
     }
-    @include xs {
+    @include mq.xs {
       font-size: 1.6rem;
     }
   }

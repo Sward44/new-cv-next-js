@@ -2,9 +2,11 @@ const path = require("path");
 console.log(path);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ["@react-pdf/renderer"],
+  sassOptions: {
+    includePaths: ["./src/style"],
   },
+  serverExternalPackages: ["@react-pdf/renderer"],
+  allowedDevOrigins: ["localhost:3000", "192.168.1.25"], // Ajout pour cross-origin
   compress: false,
   reactStrictMode: true,
   async rewrites() {

@@ -1,4 +1,4 @@
-@import "../../../style/media-queries";
+@use "../../../style/media-queries" as mq;
 
 .aside {
   grid-area: aside;
@@ -9,10 +9,10 @@
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  @include sm {
+  @include mq.sm {
     padding: 1.5rem 0;
   }
-  @include md {
+  @include mq.md {
     padding: 3rem 1.5rem;
   }
   .contact {
@@ -35,7 +35,7 @@
     position: sticky;
     top: 25px;
     z-index: 1;
-    @include sm {
+    @include mq.sm {
       display: grid;
       grid: "cont educ" auto "info lang" auto "info hobb" auto / 1fr 1fr;
       position: relative;
@@ -43,20 +43,20 @@
   }
   .block {
     padding-bottom: 3rem;
-    @include sm {
+    @include mq.sm {
       padding: 2rem;
     }
   }
   h2 {
     margin-bottom: 0.5rem;
-    @include md {
+    @include mq.md {
       font-size: 88%;
     }
   }
   h3 {
     margin-bottom: 0;
     font-size: 1.5rem;
-    @include md {
+    @include mq.md {
       font-size: 88%;
     }
   }

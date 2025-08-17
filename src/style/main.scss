@@ -1,0 +1,24 @@
+// Import des fichiers globaux
+@use "../app/[locale]/globals.scss";
+@use "../app/[locale]/page.module.scss";
+
+@use "../style/media-queries" as mq;
+@use "../style/utils";
+
+// Import des composants
+@use "../components/home/selection/Selection.module";
+@use "../components/home/section/Section.module";
+@use "../components/home/header/Header.module";
+@use "../components/home/aside/Aside.module";
+@use "../components/home/aside/components/Computing.module";
+@use "../components/home/aside/components/Contact.module";
+@use "../components/home/aside/components/Education.module";
+@use "../components/home/aside/components/Hobbies.module";
+@use "../components/home/aside/components/Languages.module";
+@use "../components/home/main/Main.module";
+@use "../components/home/footer/Footer.module";
+@use "../components/transition/LinkReact.module";
+@use "../components/form/FormAdd.module.scss";
+
+// Import de la police Mulish via Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");

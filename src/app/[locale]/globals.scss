@@ -1,4 +1,4 @@
-@import "../../style/media-queries.scss";
+@use "../../style/media-queries" as mq;
 
 * {
   margin: 0;
@@ -7,6 +7,7 @@
 }
 
 :root {
+  --font-mulish: "Mulish", sans-serif;
   --light: #c6e6f1;
   --primary: #2071e7;
   --dark: #2980b9;
@@ -78,13 +79,13 @@ a {
   display: grid;
   min-height: 100vh;
   grid: "picture header" auto "aside main" 1fr "selection footer" auto / 305px auto;
-  @include xs {
+  @include mq.xs {
     grid: "picture" auto "header" auto "main" auto "aside" auto "footer" auto "selection" auto/ auto;
   }
-  @include sm {
+  @include mq.sm {
     grid: "picture" auto "header" auto "main" auto "aside" auto "footer" auto "selection" auto/ auto;
   }
-  @include md {
+  @include mq.md {
     grid: "picture header" auto "aside main" 1fr "selection footer" auto / 270px auto;
   }
 }
